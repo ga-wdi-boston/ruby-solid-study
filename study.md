@@ -39,7 +39,7 @@ Some characteristics of poorly defined systems:
 > – Adapted from ["Design Principles and Design Patterns" by Robert C.
 > Martin](http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf)
 
-Bob Martin is much smarter than me: he has identified patterns in poorly-defined
+Bob Martin is much smarter than I: he has identified patterns in poorly-defined
 software **and** recommended some principles that can guide us on our way to
 better design. These principles are abbreviated SOLID.
 
@@ -115,8 +115,8 @@ def is_four_sided?(obj)
   obj.number_of_sides == 4
 end
 
-is_four_sided?(Rectangle.new(2,3))
-is_four_sided?(Square.new(5))
+is_four_sided?(Rectangle.new(2,3)) # TRUE
+is_four_sided?(Square.new(5))      # FALSE
 
 # Does this code adhere to LSP when the client wants a four-sided object?
 # What if the client wants a four-sided object with equal sides?
@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+ Good design is extremely  important because when done correctly code will be modular
+ and cheaper and easier to maintain.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,13 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code should follow the SOLID principles.
+Well designed code will utilize "Single Responsibility Principle" witch implies that each code block will have a single purpose. If SRP is not followed your blocks would try to accomplish multiple concerns at once.
+If the open closed principle is followed then your code can be expanded upon but each chunk can be stand-alone and except additional functionality.
+well written code follow LSP when possible. In well-designed code your main function or class should be able to work with just subtypes. Like are good old saying "if it walks like a duck and talks like a duck. It's a duck." our methods must act the same manner.
+The interface code should be kept separate from your logic other wise things will break easily and not be modular along with not following SRP, OCP, or LSP.
+Poorly designed code will not follow Dependency Inversion principles. What this means is that HIGH end logic will not depend on lower level logic. While low level logic will not depend on details. If everything depends on each other things will break easily.
+
 ```
 
 ## Design Heuristics
@@ -237,7 +244,13 @@ Are heuristics the same thing rules? What are some design heuristics you can use
 to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics ARE NOT RULES. They are "rules of thumb"/guidlines. They are things to strive for, but not things that are required.
+Well they are rules for entry and junior level developers.
+  Your class can be no longer than 100 lines of code.
+  Your methods can be no longer than five lines of code.
+  You can pass no more than four parameters and you can’t just make it one big hash.
+  When a call comes into your Rails controller, you can only instantiate one object to do whatever it is that needs to be done. And your view can only know about one instance variable.
+All of this design rules can help improve my code.
 ```
 
 ## Refactorings
@@ -246,5 +259,5 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+I feel that I could use the guide line of methods should no longer than five lines of code. I could see how my methods could possibly break that rule. I would also adopt that passing more than four parameters or a big hash could indeed be bad/dangerous. All of the heuristic guide lines should always be followed when possible.
 ```

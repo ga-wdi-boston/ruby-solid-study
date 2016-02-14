@@ -219,7 +219,18 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good software design is important because you want to be able to add and edit
+features without making your previous code messier or harder to understand.
+Adding new features makes your code more complex, and that naturally makes it
+harder to keep under control.  Good software design will allow code to be
+easily maintained even when becoming more complex.  It also saves you time, if
+there is a miscommunication between you and the client, this will be apparent in
+the design phase before you code.  Then you wouldn't have to go back to change
+as much of the code in the case that the client disagreed with what you came up
+with.  Good design will also make changes take less time.
+
+Source: [Importance of Good Software Design](https://cs.anu.edu.au/people/Alistair.Rendell/Teaching/mdtutorial/node11.html)
+[Why Software Design Matters](http://roysimkes.net/blog/2011/06/why-software-design-matters/)
 ```
 
 ## Identify Good Design
@@ -228,7 +239,24 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code is:
+-Not rigid, easy to change
+-Not fragile, changing one thing will not easily break something else
+-Mobile, can easily be used for other applications
+-Follows SOLID principles
+-DRY, simple, avoids creating things you don't need, doesn't require a lot of
+thinking to understand, isn't surprising
+
+
+Poorly-designed code is:
+-Rigid, changing one thing will affect many parts of the program
+-Fragile, easy to break things
+-Immobile, too closely tied from it's current application that it can't be used
+elsewhere, moved, or changed easily
+
+Sources: [Object Oriented Design Principles] (http://www.oodesign.com/design-principles.html)
+[3 Software Principles You Must Understand](http://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161)
+[The Principles of Good Programming](https://www.artima.com/weblogs/viewpost.jsp?thread=331531)
 ```
 
 ## Design Heuristics
@@ -237,7 +265,25 @@ Are heuristics the same thing rules? What are some design heuristics you can use
 to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are "rules of thumb," meaning that they are highly recommended to follow but
+not actual rules that must be followed.  It would make life much easier, however.
+
+-Hide data within its' classes
+-Functionality of your code should not rely on the user
+-Avoid clutter in the public interface of a class, don't have things that users
+won't user / aren't interested in using
+-Related data and behavior should be kept in one place
+-Avoid methods that seem to be using accessors or methods from other classes.
+If classes share methods, it will be easier to break both if changing just one
+-Role vs. class, make sure not to define a class if it is only a role
+-Beware of classes with many accessor methods
+-Overall avoid having too many ways for code to be overwritten (such as having
+too many accessors, since they allow code to be changed)
+-Avoid "god" classes, they will have too much responsibility
+
+Sources: [10 Object Oriented Design Heuristics for Rubyists](http://www.slideshare.net/eisenb/10-objectorienteddesignheuristicsforrubyists)
+[OO Design Heuristics](http://www.vincehuston.org/ood/oo_design_heuristics.html)
+
 ```
 
 ## Refactorings
@@ -246,5 +292,15 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+-Recognizing code smells and fixing them.  Code smells are indications that there
+may be a deeper problem in the source code.  They indicate violations of
+fundamental design principles.
+-Move work into private methods
+-Make sure a class doesn't have multiple responsibilities
+-Be aware of large conditional statements
+-Avoid data clumps such as arrays of arrays (array[i][j])
+-Use semantic naming, so that it is easy to understand what your code does
+
+Sources: [Code Smells - Wikipedia](https://en.wikipedia.org/wiki/Code_smell)
+[Code Smells: Your Refactoring Cheat Codes](http://blog.endpoint.com/2013/04/code-smells-your-refactoring-cheat-codes.html)
 ```

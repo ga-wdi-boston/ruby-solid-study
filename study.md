@@ -219,7 +219,12 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important in order to ensure your code is maintainable and readable
+to others.  If your code is very complex and conveluted, making changes or adding features
+at some other point in time can become problematic.  This is due to complex dependencies
+that may or may not be apparent at a glance.  I feel I ran into this problem during
+the tic tac toe project.  As my code base grew, I started to become more and more
+concerned about breaking things when I started changing or adding things.
 ```
 
 ## Identify Good Design
@@ -228,7 +233,18 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code should be SOLID.  Classes should have a single responsibility.
+Classes and methods should be small and maintainable. An object should be open to
+extension but closed to modification, when you decided to introduce a new feature
+you should create new objects that inherit from or delegate to the target object.
+When designing classes and creating objects in Ruby, we need to be concerned with
+what messages our objects are responding to, rather than what class the perticular
+object is an instance of.  In all, we should be able to make changes confidently
+without breaking other parts of our system.
+
+Poorly designed code is a challenge to maintain.  Classes are long and fat.  They
+have many different functions, and do many different jobs.  They become hard to
+maintain because it is hard to identify their original role.
 ```
 
 ## Design Heuristics
@@ -237,7 +253,12 @@ Are heuristics the same thing rules? What are some design heuristics you can use
 to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are 'rules of thumb'.  They are guidelines to help you build quality,
+maintainable software, but they just guidelines and can be broken.
+Some rules of thumb include
+  Writing classes that 100 lines or shorter.  Your methods on your classes are
+  5 lines or less in length.  Methods take no more than 4 parameters.  You only
+  create one instance to handle a call into your rails controller.
 ```
 
 ## Refactorings
@@ -246,5 +267,9 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+I think for me, keeping methods to 5 lines or shorter is a key heuristic.  I think
+I can sometimes get carried away with methods or functions that swell to much larger.
+Even though this rule can be broken, I feel this is a good one, and is something
+I am going to work on moving forward. 
+
 ```

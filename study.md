@@ -240,8 +240,6 @@ of poor design.
 -   Typos in code, doesn't follow semantics
 -   Improper naming conventions that confuse readers
 -   Repetitive coding that goes against the principle of DRY!
-
-
 -   [Best Coding Practices](https://en.wikipedia.org/wiki/Best_coding_practices)
 
 ## Design Heuristics

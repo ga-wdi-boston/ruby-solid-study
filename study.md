@@ -218,33 +218,53 @@ material. Instead, digest what you've read and repeat it in your own voice.
 
 In your own words, explain why good design is important.
 
-```md
-<!-- your answer here -->
-```
+Good software design has the staying power and advantages in its functionality and maintainability.It's important to go slow and to go fast to write build good software that later can be refactored and reused.
+
+-   [Miscommunications in development](http://projectcartoon.com/cartoon/2)
+
 
 ## Identify Good Design
 
 List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
-```md
-<!-- your answer here -->
-```
+
+**Well Designed Code**
+-   Modularized code - is easier to maintain, debug and update in one module as opposed to one file with multiple functions.
+-   Consistent and proper naming conventions for variables and functions that are descriptive of their uses, as well as programming language conventions (i.e. camelCase in js and snake_case in Ruby).
+-   Code is formatted and cleanly written for the computer to execute and for human programmers to read
+
+
+**Poorly Designed Code**
+-   Failing to modularize code - longer and harder to debug in one large file
+-   Typos in code, doesn't follow semantics
+-   Improper naming conventions that confuse readers
+-   Repetitive coding that goes against the principle of DRY!
+
+
+-   [Best Coding Practices](https://en.wikipedia.org/wiki/Best_coding_practices)
 
 ## Design Heuristics
 
 Are heuristics the same thing rules? What are some design heuristics you can use
 to improve the design of your code?
 
-```md
-<!-- your answer here -->
-```
+Heuristic is more intuitive than rule. Rule is given as fact. Like in this readme, *heuristics* are referred as "rules of thumb," you know when something is off in the code -- you can *smell* it based on your common sense.
+
+-   [Heuristics - StackOverflow](http://stackoverflow.com/questions/2334225/what-is-the-difference-between-a-heuristic-and-an-algorithm)
+-   [Heuristics - Wikipedia](https://en.wikipedia.org/wiki/Heuristic_(computer_science))
+
 
 ## Refactorings
 
 Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
-```md
-<!-- your answer here -->
-```
+-   Consistent indentation -- easier to read
+-   Avoid deep nesting -- should be writing shorter method, parameters
+-   *K*eep *I*t *S*tupid *S*imple -- declutter your code
+-   Delete code that is not used/invoked
+-   Write modular code -- separate functions into distinct modules
+
+
+-   [15 Best Practices For Writing Readable Code](http://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)

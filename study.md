@@ -219,7 +219,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important for many reasons. In my mind, the most important of which is
+writing code that can easily be read and modified for years without being confused
+about what you're looking at. Also, a simple well designed system is less likely to break
+when modified because each piece has such a specific task instead of affecting some function
+much larger than itself.
 ```
 
 ## Identify Good Design
@@ -228,7 +232,8 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+- DRY code as opposed to repeats of variables, methods, classes etc...
+- No longer than 100 lines in a class
 ```
 
 ## Design Heuristics
@@ -237,7 +242,10 @@ Are heuristics the same thing rules? What are some design heuristics you can use
 to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Basically, yes, heuristics should be considered rules. The sooner you do this, the sooner
+your code will become a functioning thing of beauty. Sandi Metz rules for developers are
+basically our 4 commandments. Also going slow and being meticulous about heuristics is
+an essential heuristic itself.
 ```
 
 ## Refactorings
@@ -246,5 +254,8 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+Is it DRY? This is an essenital design heuristic that simply means Don't Repeat Yourself. If you have already defined a method to do a certain task, for example, never have that task or a very similiar one later in your code.
+The more methods the better. If you can write a smaller method to do a specific task you should do so. This will make your code clearer and easier to read.
+
+
 ```

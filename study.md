@@ -219,7 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+It may be faster to get something up and running without design initially, but
+over time the lack of design will catch up with you; the code becomes hard to
+read and improve, which leads inevitably to errors and is even more
+difficult to expand upon.
 ```
 
 ## Identify Good Design
@@ -228,7 +231,12 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code is as simple as possible - each method is short and only
+does one thing, and isn't concerned with specific use-cases - it should be
+abstract enough to account for all issues without needing any one hard-coded
+into place. In contrast, poorly-designed code has long, rambling methods that
+do more than one thing, often as indicated by the use of 'and' and 'or' in the
+english-description of their purpose, and is just generally harder to follow.
 ```
 
 ## Design Heuristics
@@ -237,7 +245,9 @@ Are heuristics the same thing rules? What are some design heuristics you can use
 to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are guidelines, rules are strict. Heuristics should be followed as
+closely as possible, but they can be abandonned if need be (and your reason is
+approved by your partner.) Rules, when not followed, cause things to break.
 ```
 
 ## Refactorings
@@ -246,5 +256,12 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+Making sure your code is DRY - if code is repeated, you may lose track of where
+it occurs, which opens up the possibility of not changing it everywhere you need
+to. Additionally, it lengthens your code without adding any additional benefits,
+which  makes it harder to follow and maintain. Making sure code only has one
+responsibility - if each thing is reponsible for one task, you can know in a
+glance whether it's working or not... there's no logic tree to go down. This
+allows for easier-to-follow code that lends itself to readability and
+maintenance.
 ```

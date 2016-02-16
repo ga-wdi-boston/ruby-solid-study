@@ -219,7 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Software and application usually deal with complex systems and the nature of
+complex systems usually causes it to fail.  When it does fail it is usually very
+expensive to fix. Good design usually allows the software to not be affected
+by change as easily.
 ```
 
 ## Identify Good Design
@@ -228,7 +231,9 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code usually entails a structure that is modularized.  You have
+your components separated based off of function and change.  In essence you want
+to follow the SOLID principles.
 ```
 
 ## Design Heuristics
@@ -237,7 +242,10 @@ Are heuristics the same thing rules? What are some design heuristics you can use
 to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics aren't necessarily the same but guidelines to help you achieve SOLID
+practice.  It helps put a limit on how much you code to prevent speghetti-ness.
+
+
 ```
 
 ## Refactorings
@@ -246,5 +254,12 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+The rule to have your methods limited to only ten lines of code is great. When
+refactoring your code it allows you to make it more readable.  And again puts
+limitation on what the method does, it will be more single responsible.
+
+Same with passing 4 or more arguments into a method, it will allows to have the
+method operate within scope.
+
+
 ```

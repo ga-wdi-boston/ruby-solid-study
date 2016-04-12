@@ -233,8 +233,8 @@ of poor design.
 
 ## Design Heuristics
 
-Are heuristics the same thing rules? What are some design heuristics you can use
-to improve the design of your code?
+Are heuristics the same thing as rules? What are some design heuristics you can
+use to improve the design of your code?
 
 ```md
 <!-- your answer here -->

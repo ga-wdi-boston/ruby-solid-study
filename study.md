@@ -219,7 +219,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because structuring code in a logical and functional way the first time is easier and more time efficient than going back to repair broken/poorly designed code.  It makes code more resilient/adaptable to potential changes in the function of an application.  Additionally, it makes working in a group setting easier as other developers can more readily understand the function and intent of well designed code.
+
+(Sources:
+Study repository
+Antony's advice)
 ```
 
 ## Identify Good Design
@@ -228,7 +232,28 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code-
+
+Single responsibility principle: classes should have only one reason to change
+
+Open/closed principle: objects should be extendable but cannot be modified.
+
+Liskov substitution principle: subclasses should be substitutable for base classes.
+
+Interface segregation principle: having many specific objects is better than having one general one.
+
+Dependancy inversion principle: objects at all levels should depend on the same abstraction.
+
+Poorly designed code-
+
+Rigid: hard to change.
+Fragile: tends to break when changed.
+Immobile: components aren't re-used
+Viscous: easier to make poorly designed code than well designed code.
+
+(Sources:
+Wikipedia
+Study repository)
 ```
 
 ## Design Heuristics
@@ -237,7 +262,16 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not the same thing as rules, they are more like guidelines that should still be followed in the interest of producing well designed code.  Some heuristics you can use to that point are:
+
+-limiting classes to 100 lines of code
+-limiting methods to 5 lines of code
+-passing no more than 4 parameters
+-when a call comes into your Rails controller, only one object can be instantiated
+
+(source:
+study repository
+Sandy Metz rules)
 ```
 
 ## Refactorings
@@ -246,5 +280,12 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+Rename- use semantic naming to make it clear what your code is meant to do and reduce the need to comment it.
+
+Extract- create new methods from code taken out of unecessarily long methods.
+
+Inline- opposite of 'extract', a method is already clearly identified so the method's invocation is converted into inlined code.
+
+(source:
+http://www.integralist.co.uk/posts/refactoring-techniques.html#14)
 ```

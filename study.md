@@ -219,7 +219,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design leads to simpler systems. Simple systems are less likely to break.
+Simple systems are easier to understand, modify, and maintain. More complexity
+leads to more maintenance and difficulty in modification and repairs. It's
+easier to fix a squeaky hinge on a house door than it is to repair a blown head
+gasket in an engine.
 ```
 
 ## Identify Good Design
@@ -228,7 +232,11 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+The qualities of well-designed code would be orthogonal to the qualities of
+poorly-designed code outlined previously in this study. Well-designed code would
+be mutable, easy to change; resilient, lacking the tendency of breaking when
+changed; mobile, the components can be reused and repurposed in many scenarios;
+and fluid, easier to implement correctly rather than incorrectly.
 ```
 
 ## Design Heuristics
@@ -237,7 +245,9 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+No, heuristics are not the same as rules. Rather, they are guidelines that will
+generally be sufficient although not always perfect. [Wikipedia](https://en.wikipedia.org/wiki/Heuristic)
+The heuristics from Sandi Metz provided in the study seem to be a good way to apply the KISS (keep it simple, stupid) principle and appear as if they would be quite helpful.
 ```
 
 ## Refactorings
@@ -246,5 +256,13 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+These are taken from [Integralist](http://www.integralist.co.uk/posts/refactoring-techniques.html)
+
+Extract method: with this method you simplify complex methods by breaking them down into simpler methods with more descriptive method names.
+
+Inline temp: go through your code, remove temp variables and use the values assigned to the temp variables instead.
+
+Rename method: This method is exactly like it sounds: rename things. Examine the names of varibles, methods, etc. and rename them more descriptively. Longer, more descriptive names aren't even that much of a hassle anymore due to name suggestions built into many editing programs.
+
+Introduce explaining variable: replace an expression that evaluates to something with a variable by assigning them same expression to a variable with a descriptive name.
 ```

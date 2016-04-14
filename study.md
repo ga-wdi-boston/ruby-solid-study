@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design keeps your code more readable and manageable, making it easier to
+maintain and change.  Without good design, changes could have ripple effects
+that break your code.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,17 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code:
+- has discreet modules (blocks, classes, and methods) that are
+responsible for one thing only.
+- has modules that can have functionality added to it, but still has a
+well-defined single purpose
+- is DRY
+
+Poorly designed code:
+- has complex and interlaced inputs and outputs
+- has modules that are responsible for more than one things
+- is repetitive
 ```
 
 ## Design Heuristics
@@ -237,7 +249,13 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are rules of thumb rather than strictly/explicitly stated criteria.
+Examples are sticking to SOLID principles and more specific suggestions like
+Sandi Metz's:
+> 1.  Your class can be no longer than 100 lines of code.
+> 1.  Your methods can be no longer than five lines of code.
+> 1.  You can pass no more than four parameters and you can’t just make it one
+>     big hash.
 ```
 
 ## Refactorings
@@ -246,5 +264,8 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+Long parameter list - simplify to 3 or 4 params max
+Long method - if it needs comments to be explained, it's too long
+Large class - if there's lots of instance vars and/or methods defined, it should
+probably be split up
 ```

@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design makes your applications (a) less likely to break, (b) easier to change without breaking them, (c) easier to fix when they do break, and (d) easier to fix, maintain, and modify by someone other than the original author (or by the original author, months or years later).
 ```
 
 ## Identify Good Design
@@ -228,7 +228,17 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good code:
+  - Is DRY (doesn't repeat itself)
+  - Has short classes and methods that fulfill a single purpose
+  - Uses semantic naming
+  - Depends on things that change less frequently than it does
+  - Is modular
+
+Bad code:
+  - Is messy and interdependent--changing one thing causes ripple effects throughout the application
+  - Involves copying and reusing code (rather than abstracting it into a method or class that can be called repeatedly)
+  - Packs lots of features and responsibilities into a single class or method
 ```
 
 ## Design Heuristics
@@ -237,7 +247,9 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not strict rules so much as short cuts for assessing complicated topics. If your code violates a heuristic, it doesn't *necessarily* mean that it's bad, but in 95% of the cases it does, so it's worth taking a good look at it.
+
+Some example heuristics include Sandi Metz's rules, which deal with keeping your code brief and modular (e.g. no classes longer than 100 lines or methods longer than 5 lines). DRY is another good heuristic.
 ```
 
 ## Refactorings
@@ -246,5 +258,13 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+Heuristic: Classes should be less than 100 lines long.
+Refactorings:
+  - Extract Class: move part of the code to a new class.
+  - Replace Conditional with Polymorphism: Rather than including logic in the class to deal with a number of different conditions, create sub-classes that extend the class to allow different functionality.
+
+Heuristic: DRY (Don't Repeat Yourself)
+Refactorings:
+  - Generalize Type: Abstract ideas into general types that allow for more sharing of code.
+  - Componentization: Break down code into reusable, semantic units.
 ```

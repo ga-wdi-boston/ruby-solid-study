@@ -14,7 +14,7 @@ systems are systems well-suited to change.
 
 Complexity is a function of dependencies. A complex system is tightly coupled,
 with changes rippling throughout the entire system. A simple system has
-clearly-identifiable dependencies that are not affect by change.
+clearly-identifiable dependencies that are not affected by change.
 
 Have you ever dreaded changing some code for fear it might break something you
 won't know how to fix? Part of the blame might lie in you, in your
@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is easy to read, scalable code that allows potential.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,8 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code is independent, non-relient, and well tested/reviewed.
+Poorly designed code often tedious to change, overbearing, and slippery.
 ```
 
 ## Design Heuristics
@@ -237,7 +238,8 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+A few good rules of thumb limit class and method size. Following these
+heuristics should reduce overlapping code and help debugging.
 ```
 
 ## Refactorings
@@ -246,5 +248,11 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+Sandi Metz' Rules: no.4
+  Allowing the passage of no more than 4 parameters helps prevent over dependence
+  on a single method. When too much "traffic" is being passed in such a manner,
+  the code becomes convuluted and extremely difficult to handle. Minor changes
+  may have unintended (and potentiall catastrophic) effects. In order to avoid
+  this you may have to "stack" methods. I imagine a stair case of methods funneling
+  into a class.
 ```

@@ -67,7 +67,7 @@ acronym that stands for:
 -   [Open/Closed Principle (OCP)](http://en.wikipedia.org/wiki/Open/closed_principle)
 -   [Liskov Substitution Principle (LSP)](http://en.wikipedia.org/wiki/Liskov_substitution_principle)
 -   [Interface Segregation Principle (ISP)](http://en.wikipedia.org/wiki/Interface_segregation_principle)
--   [Dependency Inversion Principle (DIP)](http://en.wikipedia.org/wiki/Dependency_inversion_principle)
+-   [Dependency Inversioipn Principle (DIP)](http://en.wikipedia.org/wiki/Dependency_inversion_principle)
 
 These principles are presented and defined separately, but in practice they work
 together. For example, we might initially extract a class to improve adherence
@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it not only makes it easier for others to read, but it also makes it easier for you to read
+when referring back to it at a later time. If you need to go in and make edits at a later date, your code may not necessarily work if you don't have good design.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,15 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good:
+•Easy to change
+•Strong/ doesn't break easily
+•Mobile/ components are reuseable
+
+Bad:
+•Difficult to change
+•Weak/ breaks easily and otten
+•Immoble/ components have limited use
 ```
 
 ## Design Heuristics
@@ -237,8 +246,13 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are basicaly the same thing as rules. They are the main set of rules that good design should follow.
+• class should be shorter than 100 lines of code
+• methods should be shorter than 5 lines of code
+• shouldn't pass more than 4 parameters and make it one large hash
 ```
+
+ref: all above references are within this document
 
 ## Refactorings
 
@@ -246,5 +260,12 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+• Aesthetic and minimalist design
+  -If it's unnecessary, keep it out. Irrelevent information competes with relevant info making it less seen.
+• Consistency and Standards
+  -There should be a consistent use of vocab, situations, etc throughout.
+• Minimal Parameters
+  -Pass no more than 4 parameters
+
+ref: https://www.nngroup.com/articles/ten-usability-heuristics/
 ```

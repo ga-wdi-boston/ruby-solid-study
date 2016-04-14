@@ -219,7 +219,14 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+<!-- This feels so obvious and simple that I could approach it in an over-complex
+manner as equally as saying "because good design is good." There are probably a
+lot of valid good answers but I think two of the biggest are that software is
+almost--if not never--designed to be used or worked on by only one person. The
+better its design, the easier and more effective using it or working on it/changing
+it will be.
+
+-->
 ```
 
 ## Identify Good Design
@@ -228,7 +235,15 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+<!--
+good      | bad
+durable | fragile
+modular | bloaters (and others)
+simply readable | hard to understand, read by others
+
+
+
+-->
 ```
 
 ## Design Heuristics
@@ -237,7 +252,23 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+<!-- Pretty much. I always understood the word to mean best practices/effective
+techniques or something a long those lines. So maybe not hard and fast rules--but
+great rules to follow if you want to be successful in writing good code.
+Plenty of examples and while I'm sure everyone comes up with their own coding
+heuristcs, most are pretty universal:
+
+DRY
+is it hard to break / flexible
+is it easy to explain / to read
+is it consistent
+does each part of have singular responsibilty/ is every piece more like a single
+purpose knife or a multi-pronged fork
+
+
+
+
+-->
 ```
 
 ## Refactorings
@@ -246,5 +277,16 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+<!--
+comments, dead code, bloaters, simplifying conditional statements and method calls
+knowing well, and sniffing out those nasty code smells.
+
+All of the code smells and refactoring methods made sense to me but being mindful
+of them while I'm coding, and continuously checking in with those parameters will be
+the real challenge. I found the Sandy metz heuristics to be helpful rules to at
+least strive for.
+
+
+
+your answer here -->
 ```

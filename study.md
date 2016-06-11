@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it makes code more maintainable and extensible. It might slow you down in the short term, but it will end up saving a lot of time later on.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,14 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code:
+* Is SOLID
+* Is fairly DRY
+
+Poorly-designed code:
+* Makes limited use of SOLID principles
+* Is difficult to understand
+* Has complexity and lots of couplings between systems
 ```
 
 ## Design Heuristics
@@ -237,7 +244,13 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not hard rules, but they are useful habits to have. They should be followed most of the time, but can be broken if there is a good reason to do something else.
+
+Examples:
+* Don't write classes longer than 100 lines
+* Don't write methods longer than 5 lines
+* Pass at most 4 parameters
+* Only instantiate one class to accomplish any task
 ```
 
 ## Refactorings
@@ -246,5 +259,14 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+Heuristics:
+1. Pass at most 4 parameters (or class > 100 lines)
+
+ If a class needs >4 parameters to instantiate, it is likely that you can "extract a class" or "extract a subclass"
+
+2. Don't write methods longer than 5 lines
+
+  If a method is too long, you can potentially "pull out another method", or you might be able to replace some loops with things like reduce and map.
+
+source: http://ghendry.net/refactor.html
 ```

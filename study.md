@@ -219,7 +219,24 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good code is secure, robust, clear, efficient, and maintainable.
+
+Code must always needs to be adjusted and maintained and usable by you or even others.  Maintaining and adjusting code happen in these steps:
+
+1. Maintainer must read through and understand what the code is doing
+    -Clear code expedites this process
+    -Following typical software design patterns make code more recognizable
+
+2. Maintainer must find section of code they need to adjust
+  -code should be organized
+  -cohesion between code that work to accomplish a task
+  -clearly know what code controls what ex: ui, data loading, data processing etc
+3. Adjusting one thing shouldn't effect everything else
+  -code shouldn't be fragile or it will be impossible to change things without taking time to fix everything that broke
+4. Code must be sustainable.
+  -reuse code or make it scalable so that huge changes dont need to be made to accostom different scanarios.
+
+Good code makes all of these things easier. And good code is achieved by following design patterns.
 ```
 
 ## Identify Good Design
@@ -228,7 +245,35 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+source: http://www.codemag.com/article/1001061
+
+LOW COUPLING
+  -low dependency on other classes/blocks
+  -low intertangling between many classes
+    changing one class shouldnt effect many parts
+  -should be able to pull out one module with minimal other parts for that
+      must be pulled out or adjusted for everything to still work
+  -some coupling is still needed in order for code to accomplish tasks
+  -it's not necessarily the best practice to have one handler/class do everything
+      for all the other elements
+  -makes code alot more robust and less fragile / affected
+
+
+HIGH COHESION
+  -break up various needs into separate classes
+  -separate ui needs, from data loading/saving, from processing etc.
+  -have smaller parts accomplish their own responsibilitysies
+  -opposed to one god-like class the does everything on its own and is
+    not cohesive with anything else
+
+
+
+ENCAPSULATION
+  -hide data, processes, logic, etc.
+  -helps prevent duplication of data
+  -use classes or modules at interface
+      other developers dont need to know what's going on inside
+
 ```
 
 ## Design Heuristics
@@ -237,7 +282,32 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are rules of thumb for good practice and organization rather than rules that you are required to follow.
+
+S.O.L.I.D
+
+SINGLE  RESPONSIBILITY PRINCIPLE
+  -each class should have a single responsibility
+
+OPEN-CLOSED PRINCIPLE
+  -software should be open for extention, closed for modification
+  -code should be open for extensions but
+  -should never have to modify source code to accomodate extentions
+
+LISKOV SEGREGATION PRINCIPLE
+  -objects in a program should be replaceable with instances of their subtypes
+  -without huge changes to the program occuring
+  (not as important)
+
+INTERFACE SEGREGATON PRINCIPLE
+  -many client specific interfaces are better than one general purpose interface
+  -low coupling, high cohesion
+  -no god-like classes
+
+DEPENDENCY INVERSION PRINCIPLE
+  -one should depend on other obstractions, not concretions
+  -create based on dependencies rather than hard code
+
 ```
 
 ## Refactorings
@@ -246,5 +316,16 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+INTERFACE SEGREGATON PRINCIPLE
+  -many client specific interfaces are better than one general purpose interface
+  -low coupling, high cohesion
+  -no god-like classes
+
+  Pull out smaller bits of code and make them its own interface
+
+  one hugh object shouldn't cause a huge chn
+
+  SINGLE  RESPONSIBILITY PRINCIPLE
+    -each class should have a single responsibility
+    once again, no godlike classes or methods
 ```

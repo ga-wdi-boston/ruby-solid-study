@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because code needs to be able to be succssfully maintained over time.
+It would be awful to have to fix one thing and break another because the code was not
+structured in a way that protected previously written code.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,10 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good design includes highly specialized classes.  These classes should only do one thing at a time
+and not take up many lines.  Another feature of good design includes have one code block
+only rely on methods that it directly uses, and not having to use methods that are
+superfluous to that code block.
 ```
 
 ## Design Heuristics
@@ -237,7 +242,9 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are principles that should be applied to a process, namely in designing
+code.  Some heuristics that should be used are DRY (do not repeat yourself) and making
+sure that a block of code only does one thing.
 ```
 
 ## Refactorings
@@ -246,5 +253,12 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+Something I can do to keep my code dry is to make sure my code doesn't look similar
+when I'm writing it out.  That may be an indication that I'm repeating myself. If
+I am repeating myself, I can try to use variables instead of re-writing code over
+and over again or write a function that does the thing that I want to do.
+
+Another heuristic I can use is to try to keep my functions short and sweet.  I can ask
+myself what the outcome of the function is, and if I have to use an "and" or "or" to
+describle what should happen, then I can break the function into multiple functions.
 ```

@@ -219,7 +219,13 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it allows developers to manage complexity and
+set expectations. In other words, overly complex systems are difficult to manage
+because they are averse to change. Any piece of system that requires change will
+likely break the entire system and lead to further problems.
+
+Employing good design principles can extend the system's maintenance by encouraging
+reiteration and promoting collaboration through ease of accessibility and understanding.
 ```
 
 ## Identify Good Design
@@ -228,7 +234,17 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-Designed:
+ - "A class should only have one reason to change" aka objects should only have one
+ responsibility
+ - Appropriate use of inheritance and mixins
+ - Both high and low level modules should depend on abstractions
+ - Design by contract
+
+Poor Design:
+ - To couple two things that change for different reasons at different times
+ - Abstractions depending on details, top to bottom dependencies
+ - Substituting immutable objects
 ```
 
 ## Design Heuristics
@@ -237,7 +253,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are generally like rules insofar as that it sets general expectations,
+and practice outside of named heuristics is uncommon. Heuristics represent the
+go-to guidelines. Some design go-to's will include: keeping classes short, defining
+methods no longer than five lines (avoid extending methods through IF and ELSE statements),
+and limiting the number of arguments passed in each method.
+
 ```
 
 ## Refactorings
@@ -246,5 +267,13 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+In attempts to keep classes short, the single responsibility principle should help
+clearly underline the sole responsibility of that particular class. If a class has
+to change for multiple reasons, then the developer knows it deserves some refactoring.
+
+When introducing a new behavior to an existing system, rather than modifying old objects
+the other option, for the sake of better design, might include creating a new object that
+inherits from the object that is targeted. This will follow the open/closed principle when
+refactoring the codebase.
+
 ```

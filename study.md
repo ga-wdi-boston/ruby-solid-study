@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+ - Bad design causes systesms to fail more often, are more expensive to maintain, and
+ - are difficult for teams to understand-- all of which contribute to a loss of time and
+ - money for businesses.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,10 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+ -- well modulated. change the module of a method instead of changing an anonymous
+ function in every code block
+ -- heavy repeated blocks of code in a written code.  like above, when wanting to make one change in code, htis results in having to make multiple adjustments to the working code
+ -- poorly named methods.  prevents other developers from reading and understanding the point of working code.
 ```
 
 ## Design Heuristics
@@ -237,7 +242,8 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+As new to writing code, I believe my first mission is to accomplish working code
+to adequately "get things working".  As I gain momentum in this course and in coding in general, yes we should keep heuristics in the back of our mind when writing code.  For instance, classes should not be more than 100 lines of code.  Methods in our classses should not be more than 5 lines of code.  And a method should not pass more than 4 parameters.
 ```
 
 ## Refactorings
@@ -246,5 +252,5 @@ Pick a few design heuristics. Describe some common, named refactorings you can
 use approach a good design.
 
 ```md
-<!-- your answer here -->
+As mentioned above, keeping our classes to less than 100 lines of code, keeping our methods to less than 5 lines of code, and passing no more than 4 parameters to a method are all a great place to start when keeping in mind good design principles.  Additionally, refactoring your code after getting a working product -- by renaming methods to allow intuitive definitions -- will allow for easier maintainence of code down the line.  
 ```

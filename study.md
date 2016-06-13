@@ -177,7 +177,7 @@ Ask yourself the following questions when you get ready to refactor your code.
 If the answer is "no" to any of these questions, start by addressing that issue
 and see where your refactorings lead you.
 
--   Is it DRY?
+-   Is it DRY? unsure
 -   Does it have one responsibility?
 -   Does everything change at the same rate?
 -   Does it depend on things that change less often than it does?

@@ -14,7 +14,7 @@ systems are systems well-suited to change.
 
 Complexity is a function of dependencies. A complex system is tightly coupled,
 with changes rippling throughout the entire system. A simple system has
-clearly-identifiable dependencies that are not affect by change.
+clearly-identifiable dependencies that are not affected by change.
 
 Have you ever dreaded changing some code for fear it might break something you
 won't know how to fix? Part of the blame might lie in you, in your

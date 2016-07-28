@@ -242,8 +242,7 @@ use to improve the design of your code?
 
 ## Refactorings
 
-Pick a few design heuristics. Describe some common, named refactorings you can
-use approach a good design.
+Describe some common, named refactorings you can use to approach a good design.
 
 ```md
 <!-- your answer here -->

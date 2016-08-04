@@ -219,7 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-Good software design is important because well-designed software is easier to maintain and understand- and most importantly it breaks less often. When software is designed well, time can be spent adding new features or improving functionality rather than fixing broken features to make the program work.
+Good software design is important because well-designed software is easier to
+maintain and understand- and most importantly it breaks less often. When
+software is designed well, time can be spent adding new features or improving
+functionality rather than fixing broken features to make the program work.
 ```
 
 ## Identify Good Design

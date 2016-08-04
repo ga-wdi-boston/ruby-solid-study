@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good software design is important because well-designed software is easier to maintain and understand- and most importantly it breaks less often. When software is designed well, time can be spent adding new features or improving functionality rather than fixing broken features to make the program work.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,9 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code meets the SOLID principles. It is not rigid, fragile, mobile
+or viscous. It is easy to change one feature without breaking other features.
+Components are reused. It is easier to do it right than wrong.
 ```
 
 ## Design Heuristics
@@ -237,7 +239,9 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not exactly the same as rules- they are rules of thumb.
+Not all of our code will meet heuristics but they are worth striving towards as
+we refactor our code. Sandi Metz’ rules are a good set of heuristics to follow.
 ```
 
 ## Refactorings
@@ -245,5 +249,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Extract Class breaks a large class with too many methods into
+multiple more focused classes. Rename Method changes the name of a
+method to be more semantic. I referenced https://en.wikipedia.org/wiki/Code_refactoring
 ```

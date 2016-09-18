@@ -219,7 +219,12 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+
+Good design is important because it clean, well-structured code breaks less
+often, is easier to maintain, and is easier to collaborate on with others.
+
+Source: Martin article 
+
 ```
 
 ## Identify Good Design
@@ -228,7 +233,22 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+
+Well-designed code is modular: each piece of code does one thing, not many
+things. The chain of dependencies is easy to follow, and the base dependencies
+are abstract, so that changing one small thing doesn't break many other
+things. Objects and methods behave as you would expect them to, and classes
+and methods aren't long and complicated.
+
+Poorly designed code is overly complicated, making "hacks" easier than
+actually improving or interacting deeply with the original code base. It's
+also overly interconnected, such that making a small change in one place: 1)
+requires making many changes in many places; 2) causes many other things to
+break; and/or 3) is difficult because the code is written so specifically that
+it can't be reused.
+
+Sources: Martin article, Wikipedia
+
 ```
 
 ## Design Heuristics
@@ -237,7 +257,18 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+
+Heuristics are guidelines. Sandy Metz has defined several heuristics focused
+on keeping code straightforward: methods should be no longer than 5 lines, and
+classes no longer than 100. Methods shouldn't take more than four parameters,
+and you can't pass a lengthy hash in to cheat—each hash option counts as an
+individual parameter. A controller can only instantiate a single object, and a
+view can only know about one instance variable (this can require you to use a
+facade to collect everything you need to pass to a view in a single
+class/object/instance variable.)
+
+Sources: Caleb Thompson article, 
+
 ```
 
 ## Refactorings
@@ -245,5 +276,15 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+
+"Field encapsulation" — using getter/setter methods instead of accessing variables directly
+
+"Type generalization" — make your types more generalized/reusable
+
+"Replace conditional with polymorphism" — Instead of relying on if/else or switch statements, create an interface that can be used in multiple situations. Make things more abstract.
+
+"Extract method" — break a large method into smaller pieces
+
+Source: https://en.wikipedia.org/wiki/Code_refactoring#List_of_refactoring_techniques
+
 ```

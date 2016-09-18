@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good code desing is important for several reasons. Well desinged code it easier to read,
+and easier to maintain. It's also more adaptable to change.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,8 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well desinged code: less complex.
+Poor desinged code: more complex, rigid, fargile, immobile, hard to change, viscous.
 ```
 
 ## Design Heuristics
@@ -237,7 +239,13 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+No
+Class should be limited to 100 lines or less.
+Methods should be 5 lines or less.
+You can only pass one parameter.
+When a call comes into your Rails controller, you can only instantiate one
+object to do whatever it is that needs to be done. And your view can only
+know about one instance variable.
 ```
 
 ## Refactorings
@@ -245,5 +253,9 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Is it DRY?
+Does it have one responsibility?
+Does everything change at the same rate?
+Does it depend on things that change less often than it does?
+
 ```

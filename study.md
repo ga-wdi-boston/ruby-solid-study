@@ -219,7 +219,12 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is most important for maintainable and flexible code in the long
+term. If a system is too complex, it is difficult for those in working with
+the code in the future to understand what each section is doing, find all the
+dependencies, and add new features without breaking old ones. If the code is
+well-designed, understanding existing code and adding features to it should be
+much easier.
 ```
 
 ## Identify Good Design
@@ -228,7 +233,16 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good design
+- Simple
+- Broken into many small, simple parts
+- Each part has one responsibility
+- Each part only has access to properties it needs
+
+Bad design
+- Complex
+- Few parts, each with many responsibilities
+- Specific parts have access to properties of other, unrelated specific parts
 ```
 
 ## Design Heuristics
@@ -237,7 +251,10 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+No, heuristics are suggestions that should probably be followed in most cases,
+but they can be ignored if there are good reasons to do so. Limiting the amount
+of lines in one method is something I struggle with, so I can pay more attention
+to that.
 ```
 
 ## Refactorings
@@ -245,5 +262,10 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Single Responsibility Principle - Each function has one and only one
+responsibility
+Liskov Substitution Principle - Subtypes of a type can be substituted for the
+type without affecting behavior
+Interface Segregation Principle - Each object only has access to properties it
+needs access to and no more
 ```

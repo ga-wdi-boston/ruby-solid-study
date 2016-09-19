@@ -219,7 +219,15 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because code is a living thing. It exists in a
+changing environment and must therefore be responsive to change. Good design
+ensures that when the environment inevitably changes its demands, the code
+can easily change to meet the new demands.
+
+Good design is also important because development is collaborative by nature.
+Any code you write needs to be easy for another developer to read and change.
+Writing code that adheres to shared design principles makes collaboration much
+easier.
 ```
 
 ## Identify Good Design

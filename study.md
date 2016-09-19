@@ -277,4 +277,6 @@ A field is, or will be, used by another class more than the class on which it is
 
 Create a new field in the target class, and change all its users.
 
+http://refactoring.com/catalog/?filter=books-refactoring,books-radio-appear
+
 ```

@@ -219,7 +219,14 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important for a number of reasons. Foremeost, well-structured
+design is integral for implementing edits to your code, both by you and
+co-contributors. Many times you may edit your code weeks or months after it was
+initially written, and a good design allows for less confusion and headaches
+when changes are inevitably made. The primary goal of good design is called OCP,
+which essentially means that "objects should be open to extension, but closed
+to modification". Objects that conform to OCP are easily composable and can be
+extended with new behaviors without opening the extended module.
 ```
 
 ## Identify Good Design
@@ -228,7 +235,19 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good Indicators:
+- Easily readible
+- Can add extensions to objects without opening the extended class / module
+- Objects should only have one job
+- Subclasses should be substitutable for their base classes, also known as LSP
+- Depending on abstractions, not concretions
+
+Bad Indicators:
+- Objects can't be extended without modifying the extended class module
+- Objects have multiple responsibilities
+- Unecessary repetition
+- Things do not change at equal rates
+
 ```
 
 ## Design Heuristics
@@ -237,7 +256,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heurtistics are like rules in that they are guidelines for writing well-designed
+code. Some largely acknowledged rules of thumb for writing Ruby code are as
+follows:
+  - Keep your classes under 100 lines of code
+  - Keep your methods at less than 5 lines of code
+  - Never pass more than 4 parameters into a method
 ```
 
 ## Refactorings
@@ -245,5 +269,11 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Much of good design comes from planning beforehand. Implementing ample planning
+and testing allows for exponentially easier maintenance of your apps down the line.
+Planning and testing can be time consuming, but will ultimately save you tons
+of headaches in the long run. Some common approaches to refactoring include:
+- avoiding duplicate code
+- keeping your classes and methods small
+- using libraries and queries to streamline your code
 ```

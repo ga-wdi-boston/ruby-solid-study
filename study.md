@@ -219,7 +219,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design benefits the developer, user and company(client). The Developer
+can easily read the code, make changes and also explain it to others. The user
+is happy because changes are made faster and the UX is better. Lastly the
+client or company you are working for can take the code you wrote understand it
+and pass it off to another developer to make changes more efficiently.
 ```
 
 ## Identify Good Design
@@ -228,7 +232,11 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well Designed:
+Simple, easy to explain the code to someone else, modualar.
+
+Poorly Designed:
+Difficult to change,tendency to break when changed,limited reuse of components.
 ```
 
 ## Design Heuristics
@@ -237,7 +245,17 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics == rules of thumb.
+
+- Class should be under 100 lines of code.
+- Methods should be under five lines of code.
+- You should ass pass no more than four parameters and you can’t just make it one
+big hash.
+"When a call comes into your Rails controller, you can only instantiate one
+object to do whatever it is that needs to be done. And your view can only
+know about one instance variable.""
+
+
 ```
 
 ## Refactorings
@@ -245,5 +263,18 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+- Collapse Hierarchy
+A superclass and subclass are not very different.
+Merge them together.
+
+- Extract Class
+You have one class doing work that should be done by two.
+Create a new class and move the relevant fields and methods from the old class
+into the new class.
+
+- Move Field
+A field is, or will be, used by another class more than the class on which it is defined.
+
+Create a new field in the target class, and change all its users.
+
 ```

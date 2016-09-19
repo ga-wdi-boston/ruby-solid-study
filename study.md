@@ -229,11 +229,11 @@ Any code you write needs to be easy for another developer to read and change.
 Writing code that adheres to shared design principles makes collaboration much
 easier.
 
+```
+
 Sources:
 -   [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
 -   [Robert C. Martin, "Design Principles and Design Patterns"](http://mil-oss.org/resources/objectmentor_design-principles-and-design-patterns.pdf)
-
-```
 
 ## Identify Good Design
 
@@ -251,12 +251,12 @@ Well-designed code adheres to the following criteria:
 -   High-level policy code should not depend on low-level implementation code; rather, both should depend on abstractions
 -   The concrete should depend on the abstract, not the other way around
 
+```
+
 Sources:
 -   [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
 -   Wikipedia entries on the SOLID principles, linked from [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
 -   [Robert C. Martin, "Design Principles and Design Patterns"](http://mil-oss.org/resources/objectmentor_design-principles-and-design-patterns.pdf)
-
-```
 
 ## Design Heuristics
 
@@ -277,11 +277,11 @@ Some good design heuristics to use when writing code are:
 -   Write methods that are 5 lines of code or fewer
 -   Include no more than 4 parameters in a method signature, and don't cheat by passing in a hash with multiple options
 
+```
+
 Sources:
 -   [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
 -   [Caleb Thompson, "Sandi Metz' Rules For Developers"](https://robots.thoughtbot.com/sandi-metz-rules-for-developers)
-
-```
 
 ## Refactorings
 

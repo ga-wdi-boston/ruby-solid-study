@@ -255,6 +255,7 @@ Sources:
 -   [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
 -   Wikipedia entries on the SOLID principles, linked from [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
 -   [Robert C. Martin, "Design Principles and Design Patterns"](http://mil-oss.org/resources/objectmentor_design-principles-and-design-patterns.pdf)
+
 ```
 
 ## Design Heuristics
@@ -279,6 +280,7 @@ Some good design heuristics to use when writing code are:
 Sources:
 -   [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
 -   [Caleb Thompson, "Sandi Metz' Rules For Developers"](https://robots.thoughtbot.com/sandi-metz-rules-for-developers)
+
 ```
 
 ## Refactorings
@@ -290,4 +292,5 @@ It is not clear to me what a "named refactoring" is. Is this the same as the
 named design principles that make up SOLID? Or is it a name given to something
 we do all the time when refactoring, like pulling several lines out of a method
 and replacing them with a call to a new "helper" method?
+
 ```

@@ -236,7 +236,11 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code adheres to the following criteria:
+
+-   .
+-   .
+-   .
 ```
 
 ## Design Heuristics
@@ -245,7 +249,16 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics and rules are not quite the same thing. Heuristics can be thought of
+as rules of thumb. They are good guidelines, right most of the time, and should
+not be broken without a good reason...but if you have a good reason, you should
+not hesitate to break them.
+
+Some good design heuristics to use when writing code are:
+
+-   .
+-   .
+-   .
 ```
 
 ## Refactorings

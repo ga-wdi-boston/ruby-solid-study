@@ -228,6 +228,11 @@ Good design is also important because development is collaborative by nature.
 Any code you write needs to be easy for another developer to read and change.
 Writing code that adheres to shared design principles makes collaboration much
 easier.
+
+Sources:
+-   [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
+-   [Robert C. Martin, "Design Principles and Design Patterns"](http://mil-oss.org/resources/objectmentor_design-principles-and-design-patterns.pdf)
+
 ```
 
 ## Identify Good Design
@@ -238,17 +243,18 @@ of poor design.
 ```md
 Well-designed code adheres to the following criteria:
 
--   All objects have a single responsiblity that can be described in an English
-sentence without using "and" or "or"
--   It should be possible to extend, or elaborate on, the behavior of a class or
-method; but it should not be possible to change the original class or method
--   If class B inherits behavior from class A, then we should be able to
-substitute an instance of A with any instance of B without breaking our code
+-   All objects have a single responsiblity that can be described in an English sentence without using "and" or "or"
+-   It should be possible to extend, or elaborate on, the behavior of a class or method; but it should not be possible to change the original class or method
+-   If class B inherits behavior from class A, then we should be able to substitute an instance of A with any instance of B without breaking our code
 -   A change in one place should not necessitate many additional changes
 -   The small and specific should be preferred to the large and general-purpose
--   High-level policy code should not depend on low-level implementation code;
-rather, both should depend on abstractions
+-   High-level policy code should not depend on low-level implementation code; rather, both should depend on abstractions
 -   The concrete should depend on the abstract, not the other way around
+
+Sources:
+-   [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
+-   Wikipedia entries on the SOLID principles, linked from [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
+-   [Robert C. Martin, "Design Principles and Design Patterns"](http://mil-oss.org/resources/objectmentor_design-principles-and-design-patterns.pdf)
 ```
 
 ## Design Heuristics
@@ -265,12 +271,14 @@ not hesitate to break them.
 Some good design heuristics to use when writing code are:
 
 -   Don't repeat yourself (DRY)
--   Write classes and methods whose responsibility you can describe in a single
-sentence, without using "and" or "or"
+-   Write classes and methods whose responsibility you can describe in a single sentence, without using "and" or "or"
 -   Write classes that are 100 lines of code or fewer
 -   Write methods that are 5 lines of code or fewer
--   Include no more than 4 parameters in a method signature, and don't cheat by
-passing in a hash with multiple options
+-   Include no more than 4 parameters in a method signature, and don't cheat by passing in a hash with multiple options
+
+Sources:
+-   [study.md](https://github.com/ga-wdi-boston/ruby-solid-study)
+-   [Caleb Thompson, "Sandi Metz' Rules For Developers"](https://robots.thoughtbot.com/sandi-metz-rules-for-developers)
 ```
 
 ## Refactorings

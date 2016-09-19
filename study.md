@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important for not only future you and the team you work on, but for the overall health and lifespan of the software. Having good design makes software
+much more easy to maintain and resilient to change. This is espcially helfpul in managing expectations of a new feature that may be added later down the line, or when another developer is trying to debug your code for the first time. Being able
+to easily learn a system helps track the effects of changes on your code. 
 ```
 
 ## Identify Good Design
@@ -228,7 +230,18 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good:
+Simple
+Easy to read - proper naming conventions etc.
+Organized by functionality
+In general, the system should have easily identifiable dependencies that cannot be easily affected by change.
+
+Bad:
+Rigid - difficult to change
+Fragile - easily breaks after changes are made
+Immobile - difficult to recycle different components
+Vicous - harder to do it right than wrong
+
 ```
 
 ## Design Heuristics
@@ -237,7 +250,14 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are more like guiding principles, but could be considered as "rules"
+to get in th habit of following the principles on a project. Some heuristics include:
+- You class should be no longer than 100 lines of code.
+- Methods should be no longer than 5 lines.
+- Pass no more than four params and you can't make one big hash
+
+Again, these are technically just guidelines, so there could be a project where
+you just aren't able to follow one of Sandi Metz' criteria. If this occurs, you should consult your team to make the case as to why.
 ```
 
 ## Refactorings
@@ -245,5 +265,10 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Single Responsibility Principle - every class or module should be responsible for one job in the overall functionality and that responsibilty should remain exclusively in that class.
+
+Interface Segregation Principle - similar to separation of concerns, this principle states that many small, targeted objects with a very specific purpose rather than
+one general purpose object.
+
+Dependency Inversion Principle - states that modules should depend on abstractions. For instance a high-level module should not rely on a low-level module. Instead, the roles should be reversed.
 ```

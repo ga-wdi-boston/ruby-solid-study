@@ -219,7 +219,16 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it allows for flexibility and adjustment
+rather than rigid structure and potential failure. In real world environments
+code needs to be adjusted to meet changing user needs and to resolve bugs
+or changes in code. Good design makes it possible to make changes to a
+component while minimizing the risk to the rest of the system.
+I really liked this quote:
+ "They are created in order to meet the needs of the users."
+ References:
+ https://www.linkedin.com/pulse/what-system-design-why-important-development-process-fareed
+ http://users.cecs.anu.edu.au/~Alistair.Rendell/Teaching/mdtutorial/node12.html
 ```
 
 ## Identify Good Design
@@ -228,7 +237,13 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Indicators of well-designed code: limited scope of functions, components that
+can easily be replaced, limited instances of object creation, flexible parameters
+Indicators of poor design: Complex functions, many instances of items, multiple
+functions that are similar.
+References:
+https://en.wikipedia.org/wiki/Software_metric
+https://en.wikipedia.org/wiki/Software_quality
 ```
 
 ## Design Heuristics
@@ -237,7 +252,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are different from rules because they are not fixed and they can
+be changed. Instead they're closer to guidelines as they provide processes or
+checks that can be used for beter results.
+References:
+https://en.wikipedia.org/wiki/Heuristic
 ```
 
 ## Refactorings
@@ -245,5 +264,12 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Encapsulate Field - force use of getter and setter methods. This could be good
+for making sure that the contents of the method aren't changed
+Extract Class - divides elements from one class into a separate class. Can
+be useful for separation of behaviours
+Rename Method or Rename Field - this could be used with a number of other
+processes to make the code more readable and maintainable.
+Reference:
+https://en.wikipedia.org/wiki/Code_refactoring
 ```

@@ -87,7 +87,7 @@ achieve ISP is focus on SRP (and DIP).
 
 LSP is another principle we don't have to think much about. LSP says that
 "subclasses should be substitutable for their base classes". For example, things
-we call "Vehicles" should behave like "Sedans", though the latter may be more
+we call "Sedans" should behave like "Vehicles", though the former may be more
 specific. This is similar to the mantra we've repeated in the past about
 relationships between different concepts: "all squares are rectangles but not
 all rectangles are squares".

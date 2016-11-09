@@ -37,7 +37,7 @@ Some characteristics of poorly defined systems:
 > -   Viscous (easier to do it "wrong" than "right")
 >
 > – Adapted from ["Design Principles and Design Patterns" by Robert C.
-> Martin](http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf)
+> Martin](http://mil-oss.org/resources/objectmentor_design-principles-and-design-patterns.pdf)
 
 Bob Martin is much smarter than me: he has identified patterns in poorly-defined
 software **and** recommended some principles that can guide us on our way to

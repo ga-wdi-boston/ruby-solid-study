@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important to ensure that your code is stable, readable and less
+impacted by changes.  This is done by reducing complexity.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,11 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code is easy to change due to decreased dependencies, stable, contains
+reusable components and is easy to extend by adding new code that maintains it’s design.
+Poorly-designed code is the opposite.  It’s fragile and difficult to change due
+to increased complexity, it’s components are not reusable and it’s difficult to
+add code that adheres to any sort of standard.
 ```
 
 ## Design Heuristics
@@ -237,7 +242,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics aren’t rules that are required to follow, but they are a set of criteria
+to think about and pay attention to when you’re writing or refactoring your code.
+Some examples that were provided were the “Sandi Metz’ Rules” that state things
+like “your class can be no longer than 100 lines of code” or “you can only instantiate
+one object to do whatever needs to be done.”  These “rules” are in place to help
+developers write their code in a way that is consistent with the SOLID principles.
 ```
 
 ## Refactorings
@@ -245,5 +255,12 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Some refactoring techniques that can be used:
+1. Extract Class refactoring - creating a new class and moving methods to it to ensure that each class has a single, individual purpose
+2. Rename Method - renaming methods, objects, properties/attributes in order to clarify what something is and reduce the need for comments
+3. Extract Method - break up long methods into multiple smaller methods with descriptive names
+
+Resources
+https://en.wikipedia.org/wiki/Code_refactoring
+http://www.integralist.co.uk/posts/refactoring-techniques.html#3
 ```

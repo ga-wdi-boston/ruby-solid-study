@@ -262,6 +262,8 @@ Heuristics are well established guidelines, which can have exceptions if there
 is good reasoning behind them.
 
 - Limit the length of your classes, methods and the number of parameters passed.
+
+resources used: content above
 ```
 
 ## Refactorings
@@ -269,6 +271,12 @@ is good reasoning behind them.
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-Don't have two pieces of code that do the same thing.
-Don't overcomplicate a solution.
+- Don't have two pieces of code that do the same thing.
+- Don't overcomplicate a solution.
+- Determine if a block of code has more than one purpose and create a new block if
+the answer is 'yes'.
+- Try to keep the relationships between different parts of your code to a minimum
+and keep them simiple.
+
+resources used: content above
 ```

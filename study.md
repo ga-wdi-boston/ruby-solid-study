@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it has system-wide effects on the code we write. if good design is implemented then it will enable our code to be easy to change, easy to read, and difficult to break. Furthermore, good design allows for easy maintenance going forward.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,20 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good design requires code to to be:
+- Easy to read
+- Easily Maintainable
+- Easily attatable to changes
+- Diffiuclt to break
+- These principles can be summarized through the SOLID guidelines
+- Should follow Mentz's rules
+
+Bad design would be code that is:
+- Rigid
+- Fragile
+- Mobile
+- Viscous
+- Not following the rule of DRY
 ```
 
 ## Design Heuristics
@@ -237,7 +250,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are rules, but not all rules are heuristics. Heuristics are rules of thumb and thus should be considered dogma if nothing else. Principles such as DRY, going slow to go fast, and KISS which have been preached since day one are example of heuristics.
 ```
 
 ## Refactorings
@@ -245,5 +258,11 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Extract Method - turn part of a larger method into a new one, basically making code smaller so it is easier to read
+Replace Loop with Collection closure method - basically make loops look better by making them smaller, easier to do in Ruby
+Rename Method - name variables accordingly eliminating the need for comments
+
+
+Sources: https://en.wikipedia.org/wiki/Code_refactoring#List_of_refactoring_techniques
+http://www.integralist.co.uk/posts/refactoring-techniques.html#14
 ```

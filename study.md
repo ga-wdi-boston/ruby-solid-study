@@ -119,7 +119,14 @@ is_four_sided?(Rectangle.new(2,3))
 is_four_sided?(Square.new(5))
 
 # Does this code adhere to LSP when the client wants a four-sided object?
+# Yes, it does because we're able to use Rectangle's parent object (Square) to
+# run the same method on sqaure as it did to initialize to super, essentially
+# rectangle asks square to run the method that initalized it on it's arguments.
+
 # What if the client wants a four-sided object with equal sides?
+# This code breaks because a 4-sided object with equal sides implies only 1
+# numerical representation of the object's dimensions, and would therefore create
+# issues because square's parent object is looking for two arguments.
 ```
 
 OCP can be thought of as the primary goal of good design. OCP says that "objects
@@ -219,7 +226,21 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+<!-- your answer here
+
+Good design is important because it reduces the complexity of a system. The more
+complex a system is, the more likely it is to fail in the future when edits are
+made, features are added, extended, or repurposed, and because reducing
+complexity will save us time in the longterm.
+
+The better the design, the less likely that we will have to redesign it later
+when we want to improve the code. By designing a system with SOLID in mind, we
+can ensure that we're reducing frustration for later. Reducing the complexity
+of a system's inter-connectedness will ensure that only the intended
+change will happen when its made.
+
+Additional Reading for study: http://rubylearning.com/satishtalim/ruby_overriding_methods.html
+-->
 ```
 
 ## Identify Good Design
@@ -228,7 +249,29 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+<!--
+
+The SOLID principle's author defined a responsibility as a reason to change, and concludes that a class or module should have one, and only one, reason to change.
+Poor design contrast: Rigid (difficult to change), Fragile (tendency to break when changed)
+
+Software entities (classes, modules, functions, etc) should be open for extension, but closed to modification that is, such an entity can allow its behaviour to be extended without modifying its source code.
+Poor design contrast: Immobile (limited reuse of components), Fragile (tendency to break when changed)
+
+We should be able to substitute a sub-type in for a type so that we can continually add features where needed instead of having to go back to the original parameters and change them.
+Poor design contrast: Viscous (easier to do it "wrong" than "right"), Fragile (tendency to break when changed), Immobile (limited reuse of components)
+
+ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.ISP is intended to keep a system decoupled and thus easier to refactor, change, and redeploy.
+Poor design contrast: Rigid (difficult to change), Fragile (tendency to break when changed), Immobile (limited reuse of components), Viscous (easier to do it "wrong" than "right")
+
+When designing the interaction between an high-level module and a low-level one, the interaction should be thought as an abstract interaction between them. This not only has implications on the design of the high-level module, but also on the low-level one: the low-level one should be designed with the interaction in mind and it may be necessary to change its usage interface.
+Poor design contrast: Rigid (difficult to change), Immobile (limited reuse of components)
+
+Rigid (difficult to change),
+Fragile (tendency to break when changed)
+Immobile (limited reuse of components)
+Viscous (easier to do it "wrong" than "right")
+
+-->
 ```
 
 ## Design Heuristics
@@ -237,7 +280,30 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+<!--
+They're generally considered to be 'rules of thumb' in that they're observed
+as guiding principle instead of law. Certain circumstances might arise
+in a given situation's requirements that would be exceptions to the rule
+if they are still a requirement.
+
+We should adopt and practice these strategies because they will make us program
+in a much more effective and efficient manner, not because they're 'rules' in
+the mandatory sense.
+
+Examples:
+Classes can be no longer than one hundred lines of code.
+- Testing too many features at once makes testing any specific feature difficult and unweildly.
+
+Methods can be no longer than five lines of code.
+- Minimizing methods line size encourages us to use well-named private methods that are not interconnected throughout the system; this dyanmic is preferable because it will cause less confusion throughout the system.
+
+
+Pass no more than four parameters into a method. Hash options are parameters.
+- More than 4 parameters and running the code becomes laborsome and difficult to follow throughout the system.
+
+Controllers can instantiate only one object. Therefore, views can only know about one instance variable and views should only send messages to that object (@object.collaborator.value is not allowed).
+- This will avoid naming-related problems? I'm a bit confused on this example.
+-->
 ```
 
 ## Refactorings
@@ -245,5 +311,16 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+<!--
+Our approach to code refactoring is:
+1.  Identify an issue with your code, usually by the presence of a code smell.
+2.  Extract methods and classes to better define responsibilities.
+3.  Inject our new code into our old code so behavior doesn't change.
+4.  Repeat as necessary.
+
+Refactoring method:
+Rename Method: Used when the name of a method no longer explains what the method does accurately enought anymore.
+Add Parameter: Used when a method needs more information from its caller.
+Extract Class: Used when one class is doing work that should be done by two classes. Alighns with our principles.
+ -->
 ```

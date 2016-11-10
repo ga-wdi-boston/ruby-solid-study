@@ -219,7 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good software design is only important if you want to build a good product. The design (or lack thereof) will impact how you make changes to the system over time. Depending on the design, this may be immediately noticeable or start to impact your team a few years down the road. The initial delivery and the first changes were quickly made – but after some time the effort and cost to make new changes increases dramatically. The number of regression bugs with each change rises as well due to coupling of features. The time required to train new sources on the code-base to reach productivity rises as well.
+
+Source: http://www.shiftedup.com/2014/10/08/software-design-is-only-important-if-you-want-to-do-a-good-job
+
 ```
 
 ## Identify Good Design
@@ -228,7 +231,19 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good Design
+•	a class should have only a single responsibility 
+•	software entities … should be open for extension, but closed for modification.
+•	objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program
+•	many client-specific interfaces are better than one general-purpose interface.
+•	one should “Depend upon Abstractions. Do not depend upon concretions.
+
+Bad Design
+•	Rigid (difficult to change)
+•	Fragile (tendency to break when changed)
+•	Immobile (limited reuse of components)
+•	Viscous (easier to do it "wrong" than "right")
+
 ```
 
 ## Design Heuristics
@@ -237,7 +252,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are “rules of thumb” that should work in most cases. There are exceptions but they can be used as guidelines – that should only be broken if required by circumstance.
+•	Classes can be no longer than one hundred lines of code.
+•	Methods can be no longer than five lines of code.
+•	Pass no more than four parameters into a method. Hash options are parameters.
+•	Controllers can instantiate only one object. Therefore, views can only know about one instance variable and views should only send messages to that object (@object.collaborator.value is not allowed).
+
 ```
 
 ## Refactorings
@@ -245,5 +265,12 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Some common refactoring patterns include the following:
+
+Extract Method: Turn a fragment of code into a method that explains the purpose.
+Inline Method: Put a method’s body back into the calling method’s body to remove the method.
+Move Methods: Move methods to classes that use them more frequently.
+
+Source: Refactoring: Improving the Design of Existing Code
+
 ```

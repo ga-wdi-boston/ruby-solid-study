@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design mitigates complexity and failure.  In the instance that there is
+a problem it also allows the designer to better identify where the problem
+resides.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,10 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Some crieria for well designed code is that it is modular, does one thing, can be
+tested, and is easily identifiable.  It should also be resusable. Poorly designed
+code is complex, more succeptible to failure, and extremely long (meaning many
+lines).
 ```
 
 ## Design Heuristics
@@ -237,7 +242,10 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not rules.  They are, as the study put it 'rules of thumb'. A
+major takeaway for improvement is to not be concerned with doing many things at
+once with a solution, but to instead to keep it simple.  That will come with time
+and a level of comfort .
 ```
 
 ## Refactorings
@@ -245,5 +253,18 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+I ran across a slideshare that contained many of Martin Fowler's tips.  A couple that stood out
+included:
+Extract Method - If a bit of code requires a comment it may need to be extracted
+into its own method.
+Inline Method - Somewhat similar to the DRY method.  It reduces the lines of code
+where possible.
+Remove the Middle Man - If a bit of code does too much delegation then remove it
+and allow the client to directly communicate with the delegate.
+
+SOURCE: http://www.slideshare.net/redigon/refactoring-1658371
+
+
+
+
 ```

@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it allows for reliable, trackable code that is easy to understand and debug and allows other developers to work on it.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,19 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+  Good Design:
+  clean code layout
+  standar code formatting
+  no unused code
+  no commented out code
+  well commented code
+  dry code
+
+  Bad Design:
+  Lack of comments
+  unweiledy, unnefecient code
+  commented out code
+  poor code structure
 ```
 
 ## Design Heuristics
@@ -237,7 +249,15 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+While heuristics share many elements with rules, they're reall more like "guidlines". Heuristics give good standards which should be followed when possible, but there are situations where it is okay not too.
+
+Heuristics: from this document
+ - Your class can be no longer than 100 lines of code.
+ - Your methods can be no longer than five lines of code.
+ - You can pass no more than four parameters and you can’t just make it one
+big hash.
+ - When a call comes into your Rails controller, you can only instantiate one
+object to do whatever it is that needs to be done. And your view can only
 ```
 
 ## Refactorings
@@ -245,5 +265,6 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Reducing number of qualifiers; i.e. reducing several if statements to one using && and ||.
+Combining multiple methods when they take the same variables or perform similar functions. 
 ```

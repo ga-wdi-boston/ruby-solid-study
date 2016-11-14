@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good software design is important because time is money in a business, and if someone else or yourself has to look at your code, update it, make substantial changes, etc., it will take significantly longer and thus more money to make appropriate updates/changes if the design is poor. You are likely not coding on your own as a developer, so this is inherently important in order to be as strong and effective a team-member as possible.
+
+- Readings from above used as well as class discussion/comments throughout WDI.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,16 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+DRY - "Don't repeat yourself"
+Open/Closed principles
+Liskov Substitution Principle
+Interface Segregation Principle
+Dependency Inversion Principle
+
+Indicators of poor design would be non-modular code, repeating yourself with variable declarations, SCSS, methods. If you have code blocks/functions/methods performing too many tasks. If you have code that depends on something else that changes more frequently than "it" will, you should relook at the structure.
+
+
+
 ```
 
 ## Design Heuristics
@@ -237,7 +248,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Yes, but maybe not quite AS strict as rules? They're rules of thumb that are great ways to stay on track / check-in with the quality of your code. Examples:
+- A method shouldn't be passed more than 4 arguments
+- You shouldn't have a method longer than 5 lines
+- You shouldn't have a class longer than 100 lines
+
 ```
 
 ## Refactorings
@@ -245,5 +260,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Not entirely sure on what the question is asking, but DRY is one that comes to mind. You shouldn't find yourself repeating the same lines of code for whatever reason you're doing it. That should be a red flag there's a better way to write it. 
 ```

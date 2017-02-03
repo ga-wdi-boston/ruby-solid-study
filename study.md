@@ -219,8 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
-```
+Good software design is important because it allows for refactoring and revisiting code. It creates legible, understandable code that is not tangled and interdependent on each other so you can change a behavior and not have to recode everything in the app. -reading -sandi metz quote```
 
 ## Identify Good Design
 
@@ -228,8 +227,10 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
-```
+well-designed code has functions explained without using "and" or "or", single responsibilities. Functions should be able to extend their defined behavior to objects w/o having to fox with the source code. I interperate the interface segregation principle as "seperation of interests". Finally,
+the higher scope modules should be able to be reused and are independent of the lower level modules. In other words, a the app.js file in project one should not depend on specific parts that it is exporting, rather events.js should depend on app.js(which is an independent module).
+
+Poor designed code has functions that do more than one thing, functions that cannot changed object behavior with modding the source, big interfaces(i.e. one file for the whole app), and modules that are written to depend or cater to smaller modules and their details.```
 
 ## Design Heuristics
 
@@ -237,13 +238,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
-```
+Code can function w/o heuristics but for the sake of the programmer's time and sanity, they are guidelines to be followed. Monster functions that take take more than 4 parameters would be be avoided in my code. A monster class is also like building the Titanic. Small, organized code makes it easy to change and reuse components.```
 
 ## Refactorings
 
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
-```
+Extract class refactoring will be more simple if the class is less than 100 lines.  Extract method is essentially done when one writes 5 line max code.  -wikipedia "code refactoring"```

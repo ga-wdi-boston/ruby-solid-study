@@ -220,6 +220,7 @@ In your own words, explain why good design is important.
 
 ```md
 <!-- your answer here -->
+Good design is important to make your code more robust.  It will help to troubleshoot any problem and less likely to break upon any changes.
 ```
 
 ## Identify Good Design
@@ -229,6 +230,10 @@ of poor design.
 
 ```md
 <!-- your answer here -->
+As mentioned above, good design should be robust,
+Using the good design follow the solid principles.  In shorts, your code should be less complex.  Each class or module should focus on a single functionality, which make it more robust.  They should be easy to adapted but not easier modified.  Think inheritance, where you can add on more specifics functions and features in subclasses without changing the class.  Other principle include keeping your system decoupled (make it more robust), details should depend on abstraction.
+
+It is an indictation of poor design when your code tend to break upon changes, are difficult to change, components cannot be reused, etc.
 ```
 
 ## Design Heuristics
@@ -238,6 +243,7 @@ use to improve the design of your code?
 
 ```md
 <!-- your answer here -->
+heuristics is not the same thing.  They are simple guidelines to help achieve good design.  They pretty much tell you keep your code short and sweet.
 ```
 
 ## Refactorings
@@ -246,4 +252,9 @@ Describe some common, named refactorings you can use to approach a good design.
 
 ```md
 <!-- your answer here -->
+generalizing type - make codes more general and easier to share
+Make things logical:
+- improve names and locations
+- sematic namings  
+- potentially move things up (super class/sub class) as fitted.
 ```

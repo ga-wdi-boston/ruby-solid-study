@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+A good design is important because it is easier to maintain, it lets others as
+well as yourself view and make changes easily. It is essential to creating robust
+programs/applications that are both complex, yet also flexible.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,12 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Flexibility - easy to change
+Sturdiness - change without breaking
+Precise - limit reuse of components
+
+contrast - rigid, frigile, redundant
+
 ```
 
 ## Design Heuristics
@@ -237,7 +244,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are guiding principles and are meant aid in coding. They are not meant
+be strict but to outline the best practices of good design for coding. One
+design heuristics is to limit the lines of code used; a class should be less
+than 100 lines, a method should be less than 5.
+
 ```
 
 ## Refactorings
@@ -245,5 +256,12 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Encapsulate Field - use getter and setter methods to access fields
+Generalize Types - allow sharing by creating general types
+Extract Class - create a new class using code from old class
+Extract Method - turn a big method into a new one. Break down the code into
+smaller pieces
+Rename - use names that are easier to understand, related to its purpose
+
+Source - Wikipidia Refatoring Techniques
 ```

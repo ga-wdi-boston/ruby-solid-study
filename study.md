@@ -219,7 +219,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+It is important because it makes our jobs easier, and also makes it easier for
+the next developers reading our code. If someone can modify and/or extend our
+code without it breaking, if it is easy to read and identify 'problems', then
+we accomplished good design.
+-Study.md
 ```
 
 ## Identify Good Design
@@ -228,7 +232,22 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+-ISP states that many client-specific interfaces are better than one
+general-purpose interface. The opposite is when we have one general and as
+we try to modify it or try it it will break, it is harder to find the problem
+there than in the specific interface.
+-LSP says that subclasses should be substitutable for their base classes, but
+base classes should not be sustituable by subclasses.
+-OCP says that "objects should be open to extension, but closed to modification.
+In contrast, we have objects that cannot be extended due to their complexity.
+-SRP says that objects should have one and only one reason to change. If they
+are specific interfaces, we are able to have one problem at a time in an object.
+-DIP states to depend upon abstractions, not concretions. In contrast, we have
+complex objects that can not easily convert into specific ones by taking out
+a class.
+
+study.md
+
 ```
 
 ## Design Heuristics
@@ -237,7 +256,10 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+They are guiding principles for problem-solving, and they are practical, and
+while not perfect, they are sufficient for the immediate goals. Above, we see
+some that refer to our code's format.
+Wikipedia and study.md
 ```
 
 ## Refactorings
@@ -245,5 +267,9 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+-We can made our code to be dry instead of bulky and hard to read.
+- We can make our code have one responsibility instead of several.
+- We can make out code independent by not make it all depend on other objects
+too much.
+study.md
 ```

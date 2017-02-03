@@ -219,7 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because as a developer it will be your job to build and
+maintain complex systems. If these systems are not desiged well then they will
+not run well. Cracks and probelems will arise and this is becomes increasingly
+the case with poorly designed software.
 ```
 
 ## Identify Good Design
@@ -228,7 +231,11 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Poorly designed code will  be code that breaks very easily, when something small
+is altered or code which is very difficult to modify. Some ways to fight against
+these behaviors would be to continuously update your code with new code injections,
+and rework the code so that methods and classes can better handle the application
+responsibilites.
 ```
 
 ## Design Heuristics
@@ -237,7 +244,13 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Not quite rules, but they are definitely goals to try and code by. Best ways to
+achieve dry code moreso, it will work without them but it might not be the prettiest
+of the most effective/efficient code. Some of the principals include: limiting
+methods to less than 5 lines and Classes to under 100, have a limit of four
+paramaters to be passed, and when recieving a ruby call you can only deligate
+one object to do what that instance requires. Also only one instance call be
+handled on the view at once.
 ```
 
 ## Refactorings
@@ -245,5 +258,10 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Is the code DRY(Don't Repeat Yourself). We want code that only does thing once,
+not does things several times. Not always but not having DRY code can cause issues.
+Code Smells- These are bad coding patterns which will raise a red flag. These
+patterns or bad smells will be behaviors and habits to avoid, but also recognise
+to keep an eye out for so you can spot them early
+
 ```

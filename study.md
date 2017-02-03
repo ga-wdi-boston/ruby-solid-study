@@ -159,10 +159,10 @@ rules.
 ### [Sandi Metz' Rules](https://robots.thoughtbot.com/sandi-metz-rules-for-developers)
 
 > 1.  Your class can be no longer than 100 lines of code.
-> 1.  Your methods can be no longer than five lines of code.
-> 1.  You can pass no more than four parameters and you can’t just make it one
+> 2.  Your methods can be no longer than five lines of code.
+> 3.  You can pass no more than four parameters and you can’t just make it one
 >     big hash.
-> 1.  When a call comes into your Rails controller, you can only instantiate one
+> 4.  When a call comes into your Rails controller, you can only instantiate one
 >     object to do whatever it is that needs to be done. And your view can only
 >     know about one instance variable.
 >
@@ -219,7 +219,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it will save you a lot of time and heartache
+when it comes to making changes to the code down the road.  People will want to
+change features at some point and if your code was poorly designed, it is likely
+you wil either break your code or have to change more than would have been
+necessary had your design been better.
 ```
 
 ## Identify Good Design
@@ -228,7 +232,17 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Following SOLID and general best principles, some of the most important criteria
+are as follows:
+- Keep things simple, a class or module should only be responsible for one function
+- Modules should be able to have functionality added to them externally, but
+should not be able to be modified externally.
+- Subtypes of objects should only be more specific than their parent, not behave
+differently
+
+Indicators of poor design include:
+- Repeating code
+- Writing very long functions
 ```
 
 ## Design Heuristics
@@ -237,7 +251,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+"Heuristics are more guidelines than code really" - Jack Sparrow (probably)
+Heuristics are rules that you can set for yourself to try to improve your code
+design but can also be broken if there is no better way to do something and your
+team approves.  The main theme of heuristics is to keep your code 'small.' this
+means limit the size of your classes, the size of your functions, and the number
+of arguments your functions take.
 ```
 
 ## Refactorings
@@ -245,5 +264,13 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Extract class (wikipedia) - Take parts of your code out of a class and move them
+into a new class when the original class becomes too bloated.
+
+Renaming - As the name implies, you rename functions or classes to better
+describe them.
+
+Generalize Type - Make some functions or classes more general so they can be
+shared by more sub-classes or functions, resulting is less code to change down
+the road.
 ```

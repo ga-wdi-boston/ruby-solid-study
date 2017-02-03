@@ -219,7 +219,12 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it allows our code and our final product to be
+easily changed, easily read, and well structured so that breaks don't occur.
+Without good design, code can be written haphazardly, which allows room for
+errors and makes the process less flexible going foward.
+
+source: reading material in study.md
 ```
 
 ## Identify Good Design
@@ -228,7 +233,18 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code will not be rigid, meaning that it can be easily changed to
+accomodate new goals and design plans. It will not be fragile, meaning that,
+when changes do occur, the code is unlikely to break. It will not be immobile,
+meaning that pieces of code should be written in a way where they can be reused
+effectively in multiple areas throughout the program. If there is too much
+specific code attached to a particular module, it may become useless in another
+setting. Lastly, code should not be viscous, meaning that bad code is written
+because it seems easier to write than good code. It takes time to develop good
+coding skills, but the best practices possible should be used, even if it takes
+longer to get there.
+
+Sources: this study.md document and (http://mil-oss.org/resources/objectmentor_design-principles-and-design-patterns.pdf)
 ```
 
 ## Design Heuristics
@@ -237,7 +253,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Yes. Heuristics are rules of thumb that one can follow to create better code. Some
+examples include not writing more than 100 lines of code for a class, methods
+should not be longer than 5 lines, no more than four parameters should be passed
+into a method, and only one object should be instantiated within a controller.
+
+source: https://robots.thoughtbot.com/sandi-metz-rules-for-developers
 ```
 
 ## Refactorings
@@ -245,5 +266,20 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+In order to refactor your code efficiently, there is an iterative process
+that can be done when writing code. Firstly, when looking at or writing code you
+may be able to detect "code smells", or symptoms that erupt that may indicate
+a deeper problem than the code that you are writing in the moment. For instance,
+maybe it is something that you structured incorrectly several hours ago that is
+affecting the way that a current situation unfolds. Secondly, you can look over
+the tasks at hand, and take out the methods and classes individually so that you
+have a better definition of what your responsibilities are. Perhaps you have merged
+a few methods or behaviors in a way where each can function better separately.
+Thirdly, you can create new code in the code that you already wrote - that way,
+the behavior of your code doesn't change(unless you want it to), but you have a
+better way of writing it once your refactoring is complete. These steps should
+be repeated as necessary.
+
+sources: this study.md doc and https://en.wikipedia.org/wiki/Code_smell
+
 ```

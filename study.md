@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because long-lasting code needs to be easy to understand and maintain, as well as easy to change without worrying about breaking something.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,14 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code follows the SOLID principles. These include:
+- classes having single responsibilities
+- entities like classes, modules and functions being available for extensions but not modifications
+- subtype substitutability with parent-type
+- multiple specific interfaces instead of one general interface
+- High level modules not depending on low level modules, and abstractions not depending on details. Details should depend on abstractions.
+
+If one does not follow these principles, then poorly designed code will be difficult to change, break easily, and components will have limited reusability.
 ```
 
 ## Design Heuristics
@@ -237,7 +244,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not rules. Heuristics serves more as a guide and programmers should try to meet all of the criteria through refactoring. Design heuristics outlined by Sandi Metz include classes being <= 100 lines, methods being <= 5 lines, passing <= 4 parameters, no large hashes, a Rails controller call instantiating only 1 object and a view having only 1 instance variable.
 ```
 
 ## Refactorings
@@ -245,5 +252,10 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+- Extract Method: breaking up long methods into smaller chunks with descriptive identifiers
+- Pull Up Method: if there is duplicated code in two separate classes, pull that code into a super class and allow it to be used in multiple places.
+- Form Template Method: if there are two subclasses of a parent class with methods that have similar steps, move the similar steps into the parents class (template) and keep the differences in the sub classes.
+- Replace Loops w/ Collection Closure Method: use enumerable method instead of loop
+
+http://www.integralist.co.uk/posts/refactoring-techniques.html
 ```

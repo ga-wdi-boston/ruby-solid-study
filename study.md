@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design makes your code to easy for you and others to change without breaking. Time is money.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,12 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code is SOLID, DRY (don't repeat yourself), and written with KISS (keep it simple, stupid) in mind. Classes only have one responsibility, your classes/methods should be able to be used in multiple places but not modified by other code, you should be able to change how a method works without breaking/impacting other parts of the program, give your clients custom interfaces, and use abstractions.
+
+Poor design has long functions/methods, has classes and methods that are interdependent with each other in more than one way, is not semantic, has repetetive code, or relies on clever solutions rather than those which are easy to understand.
+
+https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29
+https://en.wikipedia.org/wiki/KISS_principle
 ```
 
 ## Design Heuristics
@@ -237,7 +242,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are rules of thumb, meaning that in most cases, you should follow them, but there are some scenarios where it makes sense to break them. They aren't quite rules, since a rule is something that you do not have a good reason to break. Some heuristics include keeping classes under 100 lines of code, keep methods short (5 lines or less), don't write functions that need more than 4 parameters, divide up your hashes so they are readable (as opposed to one long line), and a request to a rails server should only instantiate one object, or handle one instance variable.
 ```
 
 ## Refactorings
@@ -245,5 +250,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+My favorite is KISS. When I'm working on a codewars challenge, I can almost always tell when there's a method or technique that you're "supposed" to use, which I am ignorant of. My code goes beyond 5 lines, and doesn't make a whole lot of sense. This is my clue to do some googling. Quite often, some of the best solutions tend to be 3 lines.
 ```

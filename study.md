@@ -219,7 +219,13 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good software design makes future features/modifications much easier because the
+code is not fragile nor rigid. For example, when a developer wants to look into
+adding a feature to a tic-tac-toe game, but all of the game logic is stored
+under one function -- it will make it very hard to modify the code and prevent
+breaking the web app because the original development of the code was "placing
+all their eggs in one basket." SOLID design makes it readable, malleable and
+stronger.
 ```
 
 ## Identify Good Design
@@ -228,7 +234,12 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good Code: Modular, Single Responsibility, Minimized Dependencies, Semantic,
+Reusable, Testable
+
+Bad Code: Tight Coupling, Heavily Dependant, Untestable, Not Semantic
+
+source :http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/
 ```
 
 ## Design Heuristics
@@ -237,7 +248,13 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not rules, but more like best practices. I'm working on
+implementing these design heuristics within my code:
+
+1.) Renaming Methods
+2.) Replacing Loops
+3.) Semantic Naming
+4.) 5-Line Methods
 ```
 
 ## Refactorings
@@ -245,5 +262,17 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Renaming Methods will help me because it will help provide clarity for me
+and other dvelopers as to what my methods are doing in the app.
+
+Extracting Methods will also help me minimize my code into smaller chunks that
+will reduce the amount of responsibility within my classes, functions etc.
+
+Replacing Loops with an array/enumerable closure method will elimate the messy
+code that is used for loops.
+
+Although it is not part of refactoring, I would like to learn how to create tests
+before I begin refactoring code to help me understand what I would like it to do.
+
+source http://www.integralist.co.uk/posts/refactoring-techniques.html#7
 ```

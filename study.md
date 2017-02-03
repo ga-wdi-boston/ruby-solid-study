@@ -219,7 +219,14 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important for several reasons.
+Good design ensures that components in software are able to be separated into as
+many different modules as possible.  This allows for classes and methods to be
+reused, when possible, to reduce the number of modules and decrease complexity.
+It is also important to have a good design for the user experience.  The user
+wants to have a reliable program, and also a program that can offer some
+level of optimization.
+
 ```
 
 ## Identify Good Design
@@ -228,7 +235,14 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code should have no have many completely separate responsibilities
+under one method.  This contrasts with code that is written for functionalities
+all over the place that is hard to troubleshoot and clarify.  Good code should
+have solid methods that can have parameters replace other parameters and be able
+to complete differenttasks.  The opposite of this would be code that does not
+follow DRY, where many functionsare doing the same thing and creating redundancies.
+Well-designed code should not have large class structures that go beyond 100 lines
+of information.
 ```
 
 ## Design Heuristics
@@ -237,7 +251,13 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are rules set as strong guidelines, whereby a designer should be conforming
+to them as a default, but not without exception.  Designers can stray from the
+heuristics if they can still follow the rules of SOLID.
+A class should not be any longer than 100 lines of code and methods should be no
+longer than 5 lines of code.
+A maximum of 4 parameters should be passed into any class and only one ruby object
+should contain all the information needed for a webpage.
 ```
 
 ## Refactorings
@@ -245,5 +265,27 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+With the Single Responsibility Principle, every class should be responsible for
+a part of the software functionality.  This will make classes more robust and
+easier to understand, troubleshoot, and use elsewhere in the program.
+https://en.wikipedia.org/wiki/Single_responsibility_principle
+
+With the Open/Closed Principle, classes can be used to reach other parts of the
+program, but a class should not be modified.
+https://en.wikipedia.org/wiki/Open/closed_principle
+
+The Liskov substitution principle states that objects that are subtypes of objects
+defined in a program should be replaceable with the subtype objects without any
+need for program redesigning.
+https://en.wikipedia.org/wiki/Liskov_substitution_principle
+
+The Interface segregation principle states that users should not have to deal with
+methods in software that are not used.  Having too many different methods will
+lead to increased difficulty in making alterations to the software in the future.
+https://en.wikipedia.org/wiki/Interface_segregation_principle
+
+Dependency inversion principle states that the higher level components of software
+are decoupled from lower level, in order to use implement higher level components more
+flexibility to run other lower level modules.
+http://en.wikipedia.org/wiki/Dependency_inversion_principle
 ```

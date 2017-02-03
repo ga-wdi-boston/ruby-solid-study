@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+As a developer, we will need to refactor our code, whether it's to fix a bug, improve efficiency, or add functionality. If your code is poorly designed, not only will be more difficult to narrow down what needs to be fixed, but fixing one element could result in the destruction of another.
+
 ```
 
 ## Identify Good Design
@@ -228,7 +229,10 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code: if the requirements of code change, you should be able to build off what already exists; meaning instead of having to modify for you code, you should be write new that will be used by and work with existing code.
+
+poor design: complex structure that uses few objects to achieve an outcome rather than multiple, small objects with limited responsibilty/function.
+
 ```
 
 ## Design Heuristics
@@ -237,7 +241,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Not necessarily rules, as you could probably acheive your goal without abiding by them. Heuristics are suggested methods that set you up for success. Following the suggestions will not only result in better performing code, but also easier to comprehend/debug/refactor.
+
+- classes can be no longer than 100 lines of code.
+- methods can be no longer than five lines of code.
+- methods accept max of 4 parameters
+
 ```
 
 ## Refactorings
@@ -245,5 +254,19 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Consistency and standards: Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions.
+- use what is expected and familiar
+- when you later refactor or when others look at your code, should be easy to identify actions
+
+Match between system and the real world: The system should speak the users' language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in a natural and logical order.
+
+- use appropriate syntax to easily comprehend what a certain piece of code is intended for
+
+Error prevention: Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
+
+- limit user choices that could result unintended consequences
+- set defaults
+- flexibilty in input format requirements
+
+
 ```

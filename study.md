@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Because design is a process of weighing important needs for software, like effciency, future code maintenance, etc.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,20 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+ Well-designed code needs to follow these principles:
+ Single responsibility principle: classes should have only one reason to change
+ Open/closed principle: objects should be extendable but cannot be modified.
+ Liskov substitution principle: subclasses should be substitutable for base classes.
+ Interface segregation principle: having many specific objects is better than having one general one.
+ Dependancy inversion principle: objects at all levels should depend on the same abstraction.
+
+ Poorly designed code:
+ Rigid: hard to change.
+ Fragile: tends to break when changed.
+ Immobile: components aren't re-used
+ Viscous: easier to make poorly designed code than well designed code.
+
+ (Reference: Wikipedia)
 ```
 
 ## Design Heuristics
@@ -237,7 +250,8 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+ Heuristics are 'rules of thumb'. They are guidelines to build quality, maintainable software, but it can be broken.
+ Nice design heuristics include writing classes that 100 lines or shorter, methods on classes are 5 lines or less in length, methods take no more than 4 parameters.
 ```
 
 ## Refactorings
@@ -245,5 +259,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+  I think keep methods to 5 lines or shorter and method parameter-list take no more than 4 are very essential principles for writing functional and neat methods. I need to refactor my codes every time by following with these rules to make a DRY and functional code.
 ```

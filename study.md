@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it allows you to easily maintain your app. It also makes it easier
+for you to change any feature in your app.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Some criteria for well-designed code is having an object with a single responsibiity, being able to exend a behavior in an object, and being able to substitute subclasses in Ruby for the their base clases.  Poor design, on the other hand, is difficult to change, is difficult to understand and maintain,  break easily when changed, and limits reuse of components.
 ```
 
 ## Design Heuristics
@@ -237,7 +238,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not the same thing as rules. They are more like guidelines to follow. To have a good design, one should have a class with less than 100 lines of code. In addtion, the method should have less than 6 lines of code.
 ```
 
 ## Refactorings
@@ -245,5 +246,6 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+ In Ruby, one can use inheritance and mixin to extend objects and follow the
+Open Closed Principle. In order to apply the Single Responsibility Principle, one can make objects that have one responsibility.
 ```

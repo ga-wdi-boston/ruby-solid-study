@@ -219,7 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Well-designed systems are important because they are easier to manage and change.
+It is easier to track and fix the bugs in such systems.
+
+https://en.wikipedia.org/wiki/Software_design
 ```
 
 ## Identify Good Design
@@ -228,7 +231,25 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code:
+1. Efficient
+2. Easy to read, understand, and maintain
+3. Implements "DRY"
+4. Flows well
+5. Makes good use of semantic naming
+
+Poorly-designed code:
+1. Inefficient (likely isn't "DRY")
+2. Difficult to read, understand, and maintain because it is written in a
+ confusing manner and isn't "DRY"
+3. Does not flow well
+4. Does not use semantic naming (might have methods named do_this or something
+equally vague)
+
+
+
+https://teamtreehouse.com/community/good-code-vs-bad-code
+
 ```
 
 ## Design Heuristics
@@ -237,7 +258,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Not quite. They are used to guide the programmer as they work out the code
+initially. However, when refactoring, they are much more important to
+implement, as they facilitate writing and maintaining "DRY" code.
+
+https://robots.thoughtbot.com/sandi-metz-rules-for-developers
 ```
 
 ## Refactorings
@@ -245,5 +270,17 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+1. Rename: Give them names that describe their function so you don't
+  have to comment your code as much.
+2. Extract: Break down methods into smaller methods with more descriptive
+  names.
+3. Replacing loops: Instead of writing do loops, use some of Ruby's available,
+  more specific methods (which are much more numerous than in JavaScript!),
+  such as "select", "find", "reduce", etc.
+4. Pull up: If there are methods that can be used in several sub-Classes, pull
+  them up higher on the hierarchy ladder into a super Class.
+5. Extract surrounding: If there are two or more methods with similar code,
+ create one method and pass in a code block as an argument depending on what
+ you want the method to do in a specific circumstance.
+ http://www.integralist.co.uk/posts/refactoring-techniques.html#7
 ```

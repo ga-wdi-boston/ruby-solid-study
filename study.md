@@ -119,7 +119,9 @@ is_four_sided?(Rectangle.new(2,3))
 is_four_sided?(Square.new(5))
 
 # Does this code adhere to LSP when the client wants a four-sided object?
+# Yes, both of these objects will work because of Duck-typing.  Squares behave the same as Rectangles in terms of side-number.
 # What if the client wants a four-sided object with equal sides?
+# If the client wants to be more specific, it can request a square, which will, again, behave the same way with regard to number of sides, but in addition will have the feature of equal side length.
 ```
 
 OCP can be thought of as the primary goal of good design. OCP says that "objects
@@ -214,12 +216,14 @@ search. We ask you to write answers in your own words in order to see how you
 process what you've read. Please do not answer with direct quotes from source
 material. Instead, digest what you've read and repeat it in your own voice.
 
+*** All of my responses are based upon the Bike Shed podcast listed above, Wikipedia, and Clean Code - a Handbook of Agile Software Craftsmanship (which I just finished reading this week) ***
+
 ## Explain Why Good Software Design is Important
 
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it keeps code easy to maintain.  Maintain against what you ask?  If it works, doesn't it just work and will keep working?  No.  No, No, No.  API's change; browsers change; packages become deprecated; entire languages can be bought by companies that drastically change and/or restrict their usage; Your code needs to be able to survive these if it's going to last in the wild.  What if you want to add a feature to your product?  A well designed structure makes itself easy to add to.  What if a dependency changes, and many of your modules relied upon it?  A poorly designed system will break because it might have depended upon this module in many places in complex ways, and then you will spend an inordinate amount of time trying to track down each of the bugs from the latent infestation that you wrote into existence in the first place.
 ```
 
 ## Identify Good Design
@@ -228,7 +232,14 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Small classes.  Small objects.  Small functions.  Small modules.  Small systems.
+Short lines of code.  Variables and functions that are named as if you were naming your first-born child.  Short comments that only describe what is not already obvious from the naming and structure of the code, which should be written to be understandable from a glance.  "The only truly good comment is the comment you found a way not to write."
+
+Reuse your objects, classes, and functions as much as you can.  If you wrote them well in the first place, then you can continually reap the benefits by not having to write the same thing again, allowing you more time to get it right in the first place.
+
+Your programs should be fully modular and adehere to SRP - each function should do one and only one thing.  If possible, avoid passing arguments, and if you absolutely need to, pass no more than 2.  If you REALLY need to, 3 should be the maximum number of arguments, but you should start to feel bad about yourself and be thinking of a way to re-write the function.  Your code should look like someone cared for it through the process of writing and refactoring.  It should feel clean.  It shouldn't have any smells to it (something that gives you a bad feeling when you look at it).
+
+Bad design is when you look at code and cannot understand it from a glance.  The names are inconsistent and vague.  There are comments that explain the functions, but you cannot see how they work on your own.  You have to do a lot of "double-takes," and check back at the method definitions to see what it's actually doing.  It's not intuitive.  You might notice repeats of the same functionality, even if it's only a small occurrence where you could have substituted in a helper function.  The layout of the functions does not flow in any order, and your eyes have to jump around the file a lot to understand it.  Bad code makes you anxious about trying to change the slightest detail about it.
 ```
 
 ## Design Heuristics
@@ -237,7 +248,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics aren't rules, but they're good enough.  Examples would be not having your lines of code extend past 100 characters (for some its 80, for others its 120.  It doesn't matter as long as SOME number is defined by the team and adhered to throughout the project).  Methods should be no more than 5 lines of code.  If it goes beyond that, break up the method into smaller methods.  You really shouldn't pass any more than 3 parameters to a function.  At the system level, your modules should not have unnecessary cross-talk with each other.  There should be a common interface, such as a model that they can all interact with.
 ```
 
 ## Refactorings
@@ -245,5 +256,13 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Extract class: breaking up a large class into other classes.  This can either be a 'push down' (moving functionality to a subclass), or a 'pull up' (moving functionality to a superclass).
+
+Generalize Type: create more general object types (classes) to increase flexibility where those objects can be used.
+
+Replace conditions/switch/if-else chains with polymorphism.
+
+Renaming
+
+Encapsulating field: This is where you force your functions to access data through accessors and mutators rather than just passing around variables willy-nilly.
 ```

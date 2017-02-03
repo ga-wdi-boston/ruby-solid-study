@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it will save you (and anyone who has to work on a project after you) an immense amount of time. By following good design principles, it is easier to change and adapt a program without running into a huge number of time-consuming bugs, and when something does break, it's easier to find the location of where it went wrong. Though it is more time-consuming during hte creation process, it will ultimately be a huge time saver down the line.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,17 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code:
+- relatively short and self-contained
+- methods that only do one thing / serve one purpose
+- Has many small, focused methods/objects
+- Is well separated and flexible
+
+Poorly designed code:
+- Has methods that do many things
+- Is very long and complex
+- Has objects/classes/methods that are highly specific
+- Breaks easily when anything is changed
 ```
 
 ## Design Heuristics
@@ -237,7 +247,9 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heurisitics are _not_ the same thing as rules; they are more like guidelines and best practices, meaning they don't always need to be applied, and can be broken if the circumstances call for it.
+
+Some best practicies I can use to improve my code design is to keep it short and DRY, make sure it adheres with the principles of SOLID, and that my methods/objects/classes are flexible, while only do one thing.
 ```
 
 ## Refactorings
@@ -245,5 +257,12 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+- Rename Method - rename the method to a new one that is more descriptive to its purpose
+- Extract Method - break up long methods by shifting them into new, shorter methods with descriptive identifies
+- Pull up method - move repeated code into a super class, so it can be used in multiple places
+- Named Parameters - convert arguments into named parameters so they are clearer and easier to read/remember
+
+sources:
+http://www.integralist.co.uk/posts/refactoring-techniques.html
+https://en.wikipedia.org/wiki/Code_refactoring#List_of_refactoring_techniques
 ```

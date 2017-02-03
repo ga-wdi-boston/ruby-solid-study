@@ -219,8 +219,15 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important so that it can be easily understood and changed if necessary,
+maintained and updated with similar ease, and is not too complex that it will result
+in unecessary processes and unanticipated bugs. Good design means increased
+efficiency and will make the lives of all who have to work with code. Also, as a developer,
+learning to write well-designed code makes fixing bugs a lot simpler and the development
+process easier on the whole.
 ```
+Sources: http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf
+http://genius.cat-v.org/brian-kernighan/
 
 ## Identify Good Design
 
@@ -228,8 +235,18 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good code is flexible, easily adaptable to changes, small changes will not break large
+parts, when it breaks, it'll be easy to diagnose why, and also is streamlined.
+A nice-to-have with well-designed code is making it easy to follow and read
+with good indentation and naming conventions. In contrast, poorly designed
+code breaks easily and non-specifically when even small changes are made,
+is not easily applicable outside of its specific context, if replicated is more
+likely to not work than to work {does not maximize efficiency}, is hard to follow
+and understand, and is generally inefficient.
 ```
+
+Sources: http://en.wikipedia.org/wiki/Open/closed_principle
+http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf
 
 ## Design Heuristics
 
@@ -237,7 +254,17 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are good guidelines and rules of thumb for code but not hard and
+fast rules. For example, your linter will not yell at you if, as suggested,
+a method in Ruby exceeds five lines. However, it's a good rule of thumb to keep
+in mind that will streamline the deisgn process and make changes a lot easier. Some
+heuristics range from pneumonics like DRY- don't repeat yourself- and KISS - keep it
+stupidly simple- to other, more tangible guidelines like lmiting the number of
+lines in a class or method and the number of parameters you should pass any given
+argument.
+
+Sources: https://robots.thoughtbot.com/sandi-metz-rules-for-developers
+https://en.wikipedia.org/wiki/Code_smell
 ```
 
 ## Refactorings
@@ -245,5 +272,10 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+One design heuristic is keeping methods to 5 lines or less. A refactoring that can
+be used is extract method, which is a technique that splits a method into more than one
+so that each method is more specific and easy to apply to other situations.
+
+Sources: https://en.wikipedia.org/wiki/Code_refactoring
+https://robots.thoughtbot.com/sandi-metz-rules-for-developers
 ```

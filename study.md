@@ -39,6 +39,8 @@ Some characteristics of poorly defined systems:
 > – Adapted from ["Design Principles and Design Patterns" by Robert C.
 > Martin](http://mil-oss.org/resources/objectmentor_design-principles-and-design-patterns.pdf)
 
+<!-- NOTE This link doesnt work NOTE -->
+
 Bob Martin is much smarter than me: he has identified patterns in poorly-defined
 software **and** recommended some principles that can guide us on our way to
 better design. These principles are abbreviated SOLID.
@@ -163,6 +165,8 @@ rules.
 > 1.  You can pass no more than four parameters and you can’t just make it one
 >     big hash.
 > 1.  When a call comes into your Rails controller, you can only instantiate one
+
+<!--  NOTE NOTE NOTE ASK ABOUT THIS NOTE NOTE NOTE -->
 >     object to do whatever it is that needs to be done. And your view can only
 >     know about one instance variable.
 >
@@ -170,6 +174,8 @@ rules.
 
 The Bike Shed podcast has a great [episode](http://bikeshed.fm/1) detailing the
 experience of applying these rules on a real project.
+
+<!-- NOTE ASK ABOUT THIS -->
 
 ### Questions
 
@@ -219,7 +225,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+There are two ways that design is important in web development.
+It is very important to have very clean and effective applications because you want the user to get what they want as easily as possible. In an optimal website, I want to be able to see everything organized and get to where I want to be without asking any questions.
+On the other side of things is the code that we write. It should be seen in the same way as our UI, It should be easy to distinguish where something is happening and in what way it is organized.
 ```
 
 ## Identify Good Design
@@ -228,7 +236,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Something that I noticed was mentioned a lot is that it is important to have shorter functions because it is very likely that it's possible to put some infomation into a new function. In other words, dont use 100+ lines of code for one giant function. The amount of parameters something takes has usually been done with no more than 4 and it seems that it should be kept that way. Your code needs to be kept as organized as possible. One way I was thinking about it was that if someone asked you what a function did or anything along those lines, it shouldn't take you more than a few seconds to figure it out.
 ```
 
 ## Design Heuristics
@@ -237,7 +245,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+A big thing that I hadn't thought about much was the use of error messages or redirecting a user to where they might have wanted to go. The design improvement could be to use comments to explain yourself.
 ```
 
 ## Refactorings
@@ -245,5 +253,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+It is extremely important to make sure that when you are refactoring that your code is still doing what it was doing before. The named refactorings that could be used are re-naming, extraction, and move. There are a few others, but these sounded like the ones you would probably use first.
 ```

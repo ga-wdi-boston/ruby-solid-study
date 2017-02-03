@@ -219,7 +219,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design limits complexity and reduces the likleyhood of failure via
+code modification. Good design 'future proofs' code by making it more
+readable and editable in the future.
+(http://www.shiftedup.com/2014/10/08/software-design-is-only-important-if-you-want-to-do-a-good-job)
+(http://verraes.net/2014/10/software-design-is-just-theory/)
 ```
 
 ## Identify Good Design
@@ -228,7 +232,12 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+DRY - Don’t repeat yourself: This keeps code more abstracted rather than interdependent
+
+SOLID - single responsibility, open-closed, Liskov substitution, interface segregation and dependency inversion: Classes should have only 1 job. Objects should be extendable but clodes to modification. Child classes should be substututable for their parents. Clients should not rely on methods that are not of use/intrest to them. There should be no dependence between high and low levels, and the details of the abstraction that separates high and low levels should be deprndent on the abstractions.
+(https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
+(http://www.artima.com/weblogs/viewpost.jsp?thread=331531)
+(http://stackoverflow.com/questions/1710005/abstractions-should-not-depend-upon-details-details-should-depend-upon-abstract)
 ```
 
 ## Design Heuristics
@@ -237,7 +246,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not hard rules, they are pseudo-rules that are used to refine and improve code.
+
+> 100 line class: this helps enforce the single responsibility principal to keep classes responsible for only one job.
+
+5 lies per method: this limits complexity of methods and results in more, well  named, single tasked, methods.
 ```
 
 ## Refactorings
@@ -245,5 +258,13 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Type generalization: this refactoring calls the programmer to create more general types within their code. This allows methods to be shared between parents and all children
+
+Extract class: removing excess/unrelated methods from an existing class and adding them to a newly created class wiht a more specific purpose.
+
+Rename method: re naming methods to better describe their intended puropse.
+
+Extract Method: similar to extract class, but instead extract parts of a large method and create a new, smaller, more specified one.
+
+(https://en.wikipedia.org/wiki/Code_refactoring)
 ```

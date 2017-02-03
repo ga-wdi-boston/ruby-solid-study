@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design allows software to handle complex problems with simple solutions. By limiting the scope of small parts of your code, if a problem that your software is to solve changes, it is much easier to refactor to compensate.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,12 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good code should be :
+Flexible
+Code blocks should be broken down to one responsibility
+Don't repeat youself
+
+Poor code in contrast breaks easily when changed, is difficult to change to begin with, and has limited reuse of comonent elements.
 ```
 
 ## Design Heuristics
@@ -237,7 +242,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Yep. Keep classes and methods as short as possible (100 and 5 lines repectively). Pass no more than four parameters to a function. Only create one object at a time for use within a function.
 ```
 
 ## Refactorings
@@ -245,5 +250,9 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Generalizing type would allow one's code to be more flexible and reduce the need for repetition. 
+
+Renaming methods helps to reveal purpose clearly and can reduce redundancy.
+
+Componentization reduces code down to the smallest possible units that are responsible for one role, a la SRP.
 ```

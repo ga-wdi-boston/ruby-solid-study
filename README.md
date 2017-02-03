@@ -9,7 +9,9 @@ to changing requirements, and makes it less expensive to change.
 
 ## Prerequisites
 
--   [ga-wdi-boston/ruby-vs-js-objects](https://github.com/ga-wdi-boston/ruby-vs-js-objects)
+-   [Ruby Object Model](https://github.com/ga-wdi-boston/ruby-object-model)
+-   [Ruby Object](https://github.com/ga-wdi-boston/ruby-object)
+-   [Ruby Object Practice](https://github.com/ga-wdi-boston/ruby-objects-practice)
 
 ## Objectives
 
@@ -35,5 +37,5 @@ requests](https://github.com/ga-wdi-boston/meta/wiki/PullRequest).
 ## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or alternative
-licensing, please contact legal@ga.co.
+1.  All software code is licensed under GNU GPLv3. For commercial use or
+    alternative licensing, please contact legal@ga.co.

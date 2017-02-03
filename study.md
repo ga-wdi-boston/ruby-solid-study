@@ -219,7 +219,13 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Complex systems tend to fail or can be difficult to maintain. Less complex systems are well designed as well as good maintained.
+
+Good design is important because users want to be able to access certain features.
+It is also important for long term maintaince because good design allows easier implmentation of new features
+as well as updates that appear over time.
+
+
 ```
 
 ## Identify Good Design
@@ -228,7 +234,10 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+1. Easy to change VS difficult to change
+2. Code that won't break after implementing a change VS code that tends to break easily
+3. Code that has components that are reusable VS limited reusability of the code
+4. Code that is easier to do it "right" VS code that do it "wrong"
 ```
 
 ## Design Heuristics
@@ -237,7 +246,14 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Yes. There are rules that we use as guiding principles in our code.
+
+Some of the rules are:
+
+1. Our methods shouldn't be longer than 5 lines of code
+2. Maximum number of paramaters you should pass is 4.
+3. Class shouldn't be longer than 100 lines of code
+
 ```
 
 ## Refactorings
@@ -245,5 +261,11 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+When refactoring our code, we should take a few steps into consideration before we start refactoring.
+
+1. Identifying the issue in the code
+2. Separate classes and methods to better define responsibilities
+3. Changing code shouldn't break the code
+4. Repeating the process when it is necessary
+
 ```

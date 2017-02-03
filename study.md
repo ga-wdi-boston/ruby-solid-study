@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it allows us to be able to make changes to our
+code and expand features without breaking what's already there.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,14 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Indicators of well-designed code: Functionality is broken up--a class only handles
+one thing, functionality can be expanded without having to re-open classes, code
+is DRY
+
+Indicators of poor design: lengthy (# of lines) methods, repetition of code, methods
+that take 5+ parameters at once.
+
+https://robots.thoughtbot.com/sandi-metz-rules-for-developers
 ```
 
 ## Design Heuristics
@@ -237,7 +245,15 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are a little more flexible than rules. They're more like guidelines.
+You can choose to ignore them, but at your own peril. As a beginner, it's better
+to stick closely to them, though, because you don't know enough to know when it
+won't damage your code to break the heuristics.
+
+Some design heuristics include single-functionality in classes and methods, lack
+of repetition, and making sure that derived classes don't override the contract of
+their base classes.
+https://en.wikipedia.org/wiki/Code_smell
 ```
 
 ## Refactorings
@@ -245,5 +261,10 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+When a method requires "and" to describe its functionality, it should be broken into
+two (or more) methods. When methods grow too long, also, they should be broken
+into multiple ones. Similarly, if too many parameters need to be passed, that's an indication that a method needs to be broken up.
+However, it's also important to check that a class or method is actually providing a necessary function for the program, and also that it isn't execessively drawing from
+other classes.
+https://en.wikipedia.org/wiki/Code_smell
 ```

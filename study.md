@@ -219,7 +219,21 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+NOTE: For all answers, I used the provided readings, wikipedia entries for SOLID
+object-oriented programming, Duck-typing, and related links within those
+articles .
+
+Good design is important because it allows us to write code that doesn't just
+meet the current specs of our project, but also anticipates future needs. If we
+adhere to basic design principles like SOLID and DRY, we can avoid creating
+problems that would cost lots of time and money to fix. After experiencing
+certain issues over and over again, computer science theorists have condensed
+their solutions for avoiding these problems--which they learned would be an
+inevitability for most programmers, regardless of their level of experience--
+into a few concise rules. Also, the collaborative nature of programming makes
+adherance to these rules even more important, as we are not just writing code
+for our current and future selves, but for the other programmers we are working
+with.
 ```
 
 ## Identify Good Design
@@ -228,7 +242,35 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good design is meets most or all of the following criteria:
+  -All objects have a single responsiblity that can be described in an
+  English sentence without using "and" or "or"
+  -When a class is defined, one should have the ability to elaborate on the
+  behavior of that class, but the original class should remain unchanged in
+  doing so
+  -One should be able to substitute an instance of a class for that same class
+  and expect the instance to inherit the behavior of its class without breaking
+  code; in other words, we should be able to substitute the specific for the
+  general (such as "sedan" for "car")
+  -If it is necessary to make a change in one place, we should not have to
+  refactor a lot of additional code to reflect that one change
+  -One should depend on abstraction, rather than concretion, as a guiding
+  principle when we write our code; for example, if we are writing code for an
+  e-commerce site that sells bicyles, we should try to write code that we could
+  apply more generally to any similarly structured e-commerce sites
+  -We should define things in such a way that each class or method has only
+  a single responsibility
+
+Poor design shows one or more of the following criteria; it is:
+  -Rigid (difficult to change)
+  -Fragile (tendency to break when changed)
+  -Immobile (limited reuse of components)
+  -Viscous (easier to do it "wrong" than "right")
+
+  (Sorry for not rephrasing the second part of this answer; I could not think
+  of an alternative way to phrase the very concise ideas of rigid, fragile,
+  immobile, and viscous.)
+
 ```
 
 ## Design Heuristics
@@ -237,7 +279,26 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+While similar, heuristics and rules are not identical. Heuristics can best be
+described as guiding principles one should generally follow since they apply
+in most cases, but that can be broken with good reason (kind of like 'best
+practices'). Rules can be thought of as more rigid; they are more than
+guidelines, and we should strictly adhere to them when programming, because they
+define things like syntax within a particular language. Just like in English,
+if we don't follow the rules of Ruby syntax, we will have trouble understanding
+one another.
+
+A good place to start when refactoring is by applying Sandi Metz's design
+heuristics, defined as folllows:
+  1. Your class can be no longer than 100 lines of code.
+  2. Your methods can be no longer than five lines of code.
+  3. You can pass no more than four parameters and you can’t just make
+  it one big hash.
+  4. When a call comes into your Rails controller, you can only instantiate
+  one object to do whatever it is that needs to be done. And your view can only
+  know about one instance variable. (I don't know exactly what this one means
+  yet, but I am hoping to find out once we dive into Rails!)
+
 ```
 
 ## Refactorings
@@ -245,5 +306,12 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+You can start refactoring by asking yourself, is my code...?
+  -SOLID, adhering to the following principles:
+    -SRP (Single Responsibility Principle)
+    - ICP (Open/Closed Principle)
+    - LSP (Liskov Substitution Principle)
+    - ISP (Interface Segregation Principle)
+    - DIP (Dependency Inversion Principle)
+  -DRY (Don't Repeat Yourself)
 ```

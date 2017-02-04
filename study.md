@@ -219,7 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+It is important because the goal is not what you made, it's how you made it.
+If it is for a one time use then ok but 99% of the time what you create will be used again and again and by others who will need to make modifications, and if your code does not follow SOLID, then those making the modifications will either fail or hate you.
+Furthermore, by not following SOLID, it has more chance of having many problems.
+you can either be able to run accross the world by yourlsef and not be able run afterwards because of injuries, or you can take some time to build a car and let everyone enjoy the ride for ever.
 ```
 
 ## Identify Good Design
@@ -228,7 +231,8 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Dependence: Have methods do one thing on only and include them. If they do 2, changing it will affect 2 things!
+Substitution: subclasses should behave like their class. A horse shouldn't be a subclass of insect.
 ```
 
 ## Design Heuristics
@@ -237,13 +241,14 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
-```
+They are not rules, they're more like guidelines that unless you are a Ruby-God you should follow.
+passing no more than 4 parameters and have a max of 5 lines per method.```
 
 ## Refactorings
 
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Is it DRY? did you repeat youself? can you condense it? if so, do it.
+Does it have one responsability? does it do more than one thing? does it include 'and' / 'or'? if so, divide it.
 ```

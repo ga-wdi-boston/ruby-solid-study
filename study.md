@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good software design is important because it results in less complex systems that are easier to learn, read, and maintain, making them more resillient to change.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,23 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Principles of good design (SOLID):
+ * Single Responsibility Principle (SRP)
+   * Objects should have one and only one reason to change
+ * Open/Closed Principle (OCP)
+   * Objects should be open to extension, but closed to modification
+ * Liskov Substitution Principle (LSP)
+   * Subclasses should be substitutable for their base classes
+ * Interface Segregation Principle (ISP)
+   * It is better to have many small, focused objects in our system than to have one general purpose object
+ * Dependency Inversion Principle (DIP)
+   * Depend upon abstractions, not concretions
+
+ Indicators of poor design include:
+ * Rigid (difficult to change)
+ * Fragile (tendency to break when changed)
+ * Immobile (limited resuse of components)
+ * Viscous (easier to do it 'wrong' than 'right')
 ```
 
 ## Design Heuristics
@@ -237,7 +253,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are similar to "rules of thumb," to be used as guiding principles while you code. Some design heuristics to consider when refactoring are Sandi Metz' Rules:
+ * Your class can be no longer than 100 lines of code
+ * Your methods can be no longer than 5 lines of code
+ * You can pass no more than 4 paramters and you can't just make it one big hash
+ * Wen a call comes in, you can only instantiate one object to do whatever it is that needs to be done
 ```
 
 ## Refactorings
@@ -245,5 +265,11 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Some refactoring methods:
+ * Rename
+   * Renaming identifiers can reduce the need for code comments and nearly always helps to promote greater clarity.
+ * Extract
+   * Break up long methods by shifting overly complex chunks of code into new methods which have very descriptive identifiers.
+ * Replace Loop With Collection Closure Method
+   * aka replace the loop with an Enumerable method
 ```

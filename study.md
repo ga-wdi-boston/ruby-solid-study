@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it will determine your app's success.  A poorly designed
+app might be difficult to change, hard to debug, and expensive to maintain.  If your app
+is poorly designed, one small bug could do lots of damage, or your app could be very difficult to maintain and extend.  A poorly designed app will also make life harder for anyone who comes after you.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+In well designed code, classes and instances should work the same way, i.e. a sedan should function the same way as a vehicle.  Although sedan is more specific, in general terms they should be interchangeable.  In addition, methods should only do one thing and be short.  With poor design, a whole program might run on one giant method, which would be cumbersome and difficult to debug.  If classes aren't designed well, than you might need to make large mumbers of them or make them very complex.
 ```
 
 ## Design Heuristics
@@ -237,7 +239,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not exactly the same as rules; your initial code probable will not follow them.  An example would be that a method has no more than five lines of code.  This is difficult to do in the first go around, but in the end it will make your code modular and much more robust since functionality is spread out.
 ```
 
 ## Refactorings
@@ -245,5 +247,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Some common refactorings are "is your code DRY" and "does it only do one thing?".
+In good design, code should be modular, and you shouldn't be repeating the same pieces of
+logic elsewhere in your program.  In addition, methods should only do one thing.  If you have some very complex methods doing mutliple things, that's a good sign it's time to simplify or split up the code.
 ```

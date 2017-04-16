@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design practices ensures an application's code has a solid foundation that makes it less susceptible to bugs and better able to embrace change over time. Good design makes changing requirements easier to fulfill because dependencies are better controlled - fewer adjustments are required to address the change and there is less risk of impacts to other parts of the app. Modular code bases are clear and can be picked up/understood by anohter developer much quicker than a code base that groups large chunks of functionality and has many intertwined dependencies. Good design practices make a developer a better teammate and make for more efficient collaboration.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,12 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code is:
+- Flexible
+- Modular
+- Robust
+
+Poorly designed code is difficult to change, has intricate dependenciy and is brittle. Code a developer dreads changing because of the time it takes to find all areas where changes must be made/tested is a hallmark of poorly designed code.
 ```
 
 ## Design Heuristics
@@ -237,7 +242,10 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics really are just rules of thumb to consider when writing new code. A couple design rules to keep in mind when writing/refactoring code would be:
+
+- A class should be no longer than 100 lines of code.
+- A method should be no longer than five lines of code.
 ```
 
 ## Refactorings
@@ -245,5 +253,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Asking yourself:
+- Is this code DRY? If not, start by addressing repetition.
+- Does this piece of code depend on things that change less often than it does? If so, see how the class, method etc. in question can be modified to be more stable.
 ```

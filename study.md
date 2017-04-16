@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design helps with making changes to an application in the future. For example a rigid application will make it difficult to make modifications to one component without impacting (and potentially breaking) other components. In addition, design is mportant when working with others to ensure they understand your code and why you wrote what you wrote.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,19 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed characteristics
+ -Single Responsibility Principle: class should have only one reason to change
+ -Open/Closed Principle - ability to add methods to a class without requiring significant changes to the existing code defined in the class
+ -Liskov Substitution Principle - ability to create substitutions instead of creating subclasses that create dependencies on the parent class
+ -Interface Segregation Principle - create many small objects instead of one large object
+ -Dependency Inversion Principle - avoid creating tightly coupled methods that depend closely on one another
+
+ Poor design characteristics:
+ -Rigid: everything is dependent on each other and therefore one change will impact everything else
+ -Fragile: similar to rigid but it may not be as obvious and clear that one change will break something else
+ -Immobile: would like to reuse code but not easy to do so
+ -Viscous: making a change without following the defined design because it's easier to do a 'hack' than follow the design rules
+
 ```
 
 ## Design Heuristics
@@ -237,7 +249,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are "rules of thumb" and used as guiding principles such as Sandi Metz' Rules:
+-Class shoud not be greater than 100 lines of code
+-Methods should not be greater than 5 lines of code
+-Avoid passing more than four arguments when calling a method
+-Instantiate only one object in the controller
 ```
 
 ## Refactorings
@@ -245,5 +261,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Rename Method - helps create clarity and removes the need to add comments to code
+Move Method - helps identify if a method is correctly placed on an object
+Source: http://www.integralist.co.uk/posts/refactoring-techniques.html
 ```

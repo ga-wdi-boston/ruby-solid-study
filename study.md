@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+It is important for a number of reasons, but especially for maintainability. A poorly designed codebase is difficult to maintain, more fragile and prone to breaking, and harder to change down the road. It is inevitable that you will need to update or change your codebase over time and if you do not consider design when you create it initially, it will be much harder to deal with later.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well design code should be maintainable, and robust. It should also be DRY and modular. Indicators of poor design include code that is has a lot of dependencies, is repetitive, and is fragile. Code should also be modular and should be broken down so segments only manage very specific jobs.
 ```
 
 ## Design Heuristics
@@ -237,7 +237,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Given what I've read, it seems like heuretics are more like guidelines rather than strict rules. Sandi Metz’ rules that a method can be no longer than five lines of code is going to be one I certainly can implement. I’m at the point in my programming where a lot of the logic is beginning to really click but I haven’t really been pushing myself to be more efficient in how I write my code. I usually get it to work but I need to start considering how I can make it more compact.
 ```
 
 ## Refactorings
@@ -245,5 +245,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+A key refactoring that has already been covered in the program is keeping your code DRY. Once I have written code, I can use the DRY principle to go back and identify areas of my code where I may have repeated myself and see if there's a way that I can consolidate and simplify the code. In addition, I can look at the code and determine if each portion of the code only has one responsibility. If it does not, it may need to be broken out into smaller parts. 
 ```

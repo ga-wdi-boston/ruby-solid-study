@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+<!-- Good design is important because it reduces complexity. -->
 ```
 
 ## Identify Good Design
@@ -228,7 +228,11 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+<!-- A class is at most 100 lines long.
+    A method should be max 5 lines long.
+    Poor design signs:  fragile--changes break a myriad of other things;
+    rigid--the code is difficult to update.
+    -->
 ```
 
 ## Design Heuristics
@@ -237,7 +241,9 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+<!-- not the same, but more like rules of thumb/best practices (code will still work but
+best practice is to adhere to heuristics, like:
+passing a max of 4 parameters  -->
 ```
 
 ## Refactorings
@@ -245,5 +251,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+<!-- Open closed principle -- update object by adding methods or symbols but not
+change the symbols--basically keep code already written, assuming it's written
+with good design, but add functionality - build on what's made already -->
 ```

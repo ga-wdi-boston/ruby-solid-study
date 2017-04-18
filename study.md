@@ -50,9 +50,9 @@ principles provide us a framework for structuring our work. The cycle for
 improving our code will look like this:
 
 1.  Identify an issue with your code, usually by the presence of a code smell.
-1.  Extract methods and classes to better define responsibilities.
-1.  Inject our new code into our old code so behavior doesn't change.
-1.  Repeat as necessary.
+2.  Extract methods and classes to better define responsibilities.
+3.  Inject our new code into our old code so behavior doesn't change.
+4.  Repeat as necessary.
 
 This is inherently an iterative process. This process is made easier by the
 presence of automated tests, but at the very least we should manually exercise
@@ -159,10 +159,10 @@ rules.
 ### [Sandi Metz' Rules](https://robots.thoughtbot.com/sandi-metz-rules-for-developers)
 
 > 1.  Your class can be no longer than 100 lines of code.
-> 1.  Your methods can be no longer than five lines of code.
-> 1.  You can pass no more than four parameters and you can’t just make it one
+> 2.  Your methods can be no longer than five lines of code.
+> 3.  You can pass no more than four parameters and you can’t just make it one
 >     big hash.
-> 1.  When a call comes into your Rails controller, you can only instantiate one
+> 4.  When a call comes into your Rails controller, you can only instantiate one
 >     object to do whatever it is that needs to be done. And your view can only
 >     know about one instance variable.
 >
@@ -219,7 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+* Code is easier to maintain
+* Less likely to break
+* Easier to test
+* Easier to understand what the code is doing
 ```
 
 ## Identify Good Design
@@ -228,7 +231,9 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+* Classes have only one reason to change, whatever that reason may be
+* Classes can be extended to meet the needs of the developer, but they do NOT need to be modified
+* Every class has a single responsibility
 ```
 
 ## Design Heuristics
@@ -237,7 +242,9 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not the same as rules, they are more like guidelines.
+* Limit the lines of code in a class or method
+* Less than 4 parameters in a method
 ```
 
 ## Refactorings
@@ -245,5 +252,6 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+* Renaming methods
+* Add levels of abstraction
 ```

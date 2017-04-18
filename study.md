@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is so important because it is much easily maintained. It breaks less,
+its easier to read, it is easier to maintain, and it is much less expensive to work
+with. Just all around makes lives easier.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,13 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+great abstraction
+independent responsibility
+focused interface/code
+
+general working code
+classes or methods that do more than one thing
+complex design that is not seperated out into their own responsibilities
 ```
 
 ## Design Heuristics
@@ -237,7 +245,8 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Yes. Just a ten dollar word. Some of the design Heuristics are to keep it dry.
+Keep things independent from each other. Make things have a sigular focus
 ```
 
 ## Refactorings
@@ -245,5 +254,10 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Single Responsibility Principal. The idea of making sure your code or your classes
+and methods are only doing one thing and one thing only. If you cant describe the
+what it does without using and or or it should be abstracted.
+Dependent Inversion Principal. The idea of making sure things are abstracted out into
+focused jobs but can be dependent on general high level ideas. this allows us to 
+abstact into have SRP code but still have general traits from high level design.
 ```

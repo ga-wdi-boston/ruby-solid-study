@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design manages complexity. By creating a methodical design you will have
+more foresight into what things may come up during development. Making a complex
+system as simple as possible makes it more robust and resilient to bugs.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,12 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good design                    -          Bad design
+----------                                ----------
+* methods do one thing                    * methods to many things
+* methods are short and sweet             * methods balloon to inconceivable messes
+* individual parts are well concieved     * individual parts are haphazard and
+and fit together                          and hard to follow
 ```
 
 ## Design Heuristics
@@ -237,7 +244,14 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Hueristics are more guidelines than rules. Some general guidelines -
+methods less than 100 lines of codes
+methods do a single thing
+
+Sticking to general guidelines such as above will allow you some tools
+to refactor your code. By using these general rules you can more easily
+find a starting place to refactor your code.
+
 ```
 
 ## Refactorings
@@ -245,5 +259,13 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+SRP - Sigle responsiblity principle
+    denotes that methods should have a single responsiblity
+OCP - Open closed principle
+    methods should be extendable but not mutatable
+ISP - Interface segragation principle
+    methods only interact with specific interfaces
+DIP - Dependency inversion principle
+    ensures that classes are not so easily broken by focusing on depency
+    from the bottom up
 ```

@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+At its core, good software design is low-cost software design, utilizing less
+resources over its lifetime than bad software design.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code tends to be containerized at the lowest granularity feasible, extensible, and depend upon abstractions.
 ```
 
 ## Design Heuristics
@@ -237,7 +238,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are essentially guidelines to try to adhere to. Classes should be < 101 lines, Methods < 6 lines, don't pass > 4 parameters, don't instantiate more than one object.
 ```
 
 ## Refactorings
@@ -245,5 +246,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+DRY to eliminate redundancy in code, Transparency to be open and honest about
+the cost of refactoring, Business Catalysts (Requests) should be the impetus
+for refactoring.
 ```

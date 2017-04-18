@@ -219,8 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
-```
+It is important to think of design early and often. Even looking back to the
+game project, it is easy to see how crucial it is to focus on design. It
+is imperative so throughout the lifecycle it is cheaper to maintain than
+a poorly designed system.```
 
 ## Identify Good Design
 
@@ -228,8 +230,9 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
-```
+I would say it is important to keep code DRY. This means it will be easier
+to maintain and modify compared to poorly designed code that you'd have to
+refactor in multipkle places.```
 
 ## Design Heuristics
 
@@ -237,13 +240,18 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
-```
+They are not 'exact' rules, but rather guidelines that you should follow. Some
+examples from this study are:
+      Your class can be no longer than 100 lines of code.
+      Your methods can be no longer than five lines of code.
+      You can pass no more than four parameters and you can’t just make it one
+      big hash. ```
 
 ## Refactorings
 
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+The main takeaway is to keep the code DRY and ensure that a method has a
+single responsibility so that it is easier to maintain.
 ```

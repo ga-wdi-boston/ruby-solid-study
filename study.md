@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it reduces complexity, which means that you have code that is easy to read and understand, and that can be more easily changed in the future if/when new features are requested.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,20 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+well-designed code:
+
+-DRY
+-Has one responsibility
+-Everything changes at the same rate
+-Depends on things that change less often than it does
+
+Indicators of poor design:
+
+-Code repeats itself
+-Multiple responsbilities
+-Everything does not change at the same rate
+-Depends on things that change more often than it does
+
 ```
 
 ## Design Heuristics
@@ -237,7 +250,16 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not quit the same as rules.  They are better described as "rules of thumb" and principles that can be used for guidance as you code.
+
+The following design heuristics are from the required reading and were written by Sandi Metz:
+
+-Your class can be no longer than 100 lines of code.
+-Your methods can be no longer than five lines of code.
+-You can pass no more than four parameters and you can’t just make it one big hash.
+-When a call comes into your Rails controller, you can only instantiate one object to do whatever it is that needs to be done.
+-You can break these rules if you can talk your pair into agreeing with you.
+
 ```
 
 ## Refactorings
@@ -245,5 +267,10 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+As described in the required reading, developers can ask themselves the following questions.  If the answer to any are "no", then that is an issue that can be started with.
+
+-   Is it DRY?
+-   Does it have one responsibility?
+-   Does everything change at the same rate?
+-   Does it depend on things that change less often than it does?
 ```

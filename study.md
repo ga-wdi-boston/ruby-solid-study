@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+A well designed system is easy to learn and easy to change. Because of this, a well designed system is cheaper to maintain and is more likely to beat the competition when getting changes to market.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code is DRY. A poorly designed system is not. This means that code will have to be changed in multiple places and is more apt to break if someone forgot to change all the places. Making changes in multiple places means that there is more testing that need to take place (more costly) and the risk of introducing a defect is higher because of more places that have been changed. More testing means that it may take longer and is more costly to get changes to market.
 ```
 
 ## Design Heuristics
@@ -237,7 +237,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are guidelines. They are rules, but not exact rules-- there is no code police force out there that will enforce the rules. I can use all of the ones listed in this lesson: keep class code small (less than 100 lines), keep method code small (about 5 lines), etc.
 ```
 
 ## Refactorings
@@ -245,5 +245,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+I can use DRY approach to not repeat myself and make sure that my code has only one responsibility.
 ```

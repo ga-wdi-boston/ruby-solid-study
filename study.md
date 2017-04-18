@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design helps simplify complex logic. It also greatly facilitates reusability of code as well as ensure that project timelines are met and within budget. It is a lot cheaper to spend the time and effort designing well up front before 'hitting the keyboard' as it is much cheaper to make a change earlier in the software development life cycle (especially the design phase) than later in the construction phase.
+Good design also facilitates the agile methodology of peer programming and working on small sections of code iteratively. By designing your sprints in clear concise fashion, it enables developers to easily work on different phases of an application by picking up someone else's design and been able to easily start coding based on a well laid out design.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,16 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good design should be flexible to accomodate change in requirements.
+It should also follow the DRY principle to minimise bugs as writing code once and resuing it over and over is a better design than littering a program with the same code.
+Also another example of good design is to GO SLOW TO GO FAST. This seems counter intuitive but by slowing planning out your analysis and design phase of a project will guarentee that your construction phase will go faster because you gave the time to think ahead and design it correctly
+
+
+Poor design suffers from these issues:
+Rigid (difficult to change)
+Fragile (tendency to break when changed)
+Immobile (limited reuse of components)
+Viscous (easier to do it "wrong" than "right")
 ```
 
 ## Design Heuristics
@@ -237,7 +247,8 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+These are not hard set rules but more rules of thumb. For example you do not HAVE to comment your code, but it is a good rule of thumb to do so. Some other things you can do to improve the design is keep your classes as small as possible. Same goes for methods when possible. KEep breaking your code down into smaller chunks to help facilitate it's debugging and it's maintainability. Another important self test here is the DRY test in your code. Again your code will run with two sets of the same code but from a rule of thumb, it is best to do it once and call it from the rest of your programs. If it breaks or needs to change, it is only in one location.
+The best advice I read in the articles by far was 'slow down to speed up' Brilliant! It is so easy to hit the keyboard and starting coding but not think slowly about what the heck you're supposed to do. It seems like you are doing nothing but the long term will be a faster completion of the project
 ```
 
 ## Refactorings
@@ -245,5 +256,34 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Based on the readings the cycle for improving code is iterative as follows which I didn't follow that well:
+Identify an issue with your code, usually by the presence of a code test cycle.
+Extract methods and classes to better define responsibilities.
+Inject our new code into our old code so behavior doesn't change.
+Repeat as necessary.
+I found this very long article online which was quite helpful when I skimmed parts of it:
+http://www.integralist.co.uk/posts/refactoring-techniques.html
+Some highlights that help explain this question:
+"...The purpose of refactoring is to improve the quality, clarity and maintainability of your code. Simple really.
+
+But also, refactoring can be a great lesson in understanding an unfamiliar code base.
+
+Think about it, if you inherit a poorly designed code base that you've not seen before and you now need to either fix a bug or add a new feature, then implementing the code necessary would be a lot easier once you had refactored it to be in a more stable, maintainable and ultimately 'understandable' state.
+
+Otherwise you would be forced to retro fit your new code on top of a poorly designed foundation and that would be the start of a very unhappy relationship. You'll usually find the time you start refactoring the most is when you are fixing bugs or adding new features.
+
+For example, you typically first need to understand the code that has already been written (regardless of whether it was you who wrote it originally or someone else).
+
+The process of refactoring helps you better understand the code, in preparation for modifying it.....
+
+The Rename Method
+
+The single most effective and simple refactoring you can implement is to rename a property/attribute, method or object.
+
+Renaming identifiers can reduce the need for code comments and nearly always helps to promote greater clarity.
+
+You'll find that renaming things is a fundamental part of other refactoring techniques to aid understanding of the code.
+
+This technique relies on giving items a descriptive name to ensure the developer knows at a glance exactly what it does. .."
+
 ```

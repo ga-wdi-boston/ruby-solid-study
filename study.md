@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good Design is important because it will make your code less fragile, the code
+will be reusable(extendable), follows design patterns that are well known(is
+to understand). Using good design also limits the bugs in your code.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,16 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Using the SOLID principles: Each class should have a single responsibility,
+should be extendable without having to change the base class, sub classes should
+be able to be replaced with their parent class without causing bugs, using many
+interfaces as opposed to a general catch all interface and high level modules
+should not depend on lower level modules(decoupling).
+
+Some aspects of poor design would be rigid or difficult to change, fragile
+or tendency to break when changed, limited reuse of components, complex or hard
+to understand, classes with large methods(> 5 lines), passing more than 4
+arugments to a method, large classes(> 100 lines of code.)
 ```
 
 ## Design Heuristics
@@ -237,7 +248,15 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are rules of 'thumb' that can be broken for the correct reason and
+is agreed upon after much consideration.
+Some heuristics :
+1. Your class can be no longer than 100 lines of code.
+2. Your methods can be no longer than five lines of code.
+3. You can pass no more than four parameters
+4. When a call comes into your Rails controller, you can only instantiate one
+object to do whatever it is that needs to be done. And your view can only
+know about one instance variable.
 ```
 
 ## Refactorings
@@ -245,5 +264,11 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Some common refactorings which one can use to for good design is by telling
+your duck :) the answers to these questions:
+1. Is it DRY(Don't Repeat Yourself)?
+2. Does it have one responsibility?
+3. Does everything change at the same rate?
+4. Does it depend on things that change less often than it does?
+
 ```

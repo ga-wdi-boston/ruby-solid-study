@@ -219,7 +219,10 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Well-designed systems are easier to learn and maintain and are also resilient to
+change, since it is easier to trace the effects of a change.
+Well-designed systems are cheaper to maintain in terms of cost and time than
+more complex and tightly coupled poorly-designed systems.
 ```
 
 ## Identify Good Design
@@ -228,7 +231,13 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well-designed code should be modular and loosely coupled.  A change in one area
+of the code should not adversely impact other areas of the code.  Each class
+and/or method should only do one thing.
+
+Poorly-designed code will have large files, classes and methods and can be
+tightly coupled causing the potential for side effect bugs in other areas of the
+code.
 ```
 
 ## Design Heuristics
@@ -237,7 +246,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are guiding principles for writing code.  Developers often refactor
+code to split up longer classes, methods and files into smaller classes,
+methods and files that accomplish a single function.   Duplicate code is often
+refactored into a single method and other parts of the code would then be removed
+to only call the newly created single method to reduce complexity and follow
+the DRY (Don't Repeat Yourself!) heuristic.
 ```
 
 ## Refactorings
@@ -245,5 +259,9 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+DRY (Don't Repeat Yourself!)
+Classes and methods should only do one thing.
+Make code modular and scalable.
+Keep sizes of classes, methods and files small.
+Use libraries and templates when applicable.
 ```

@@ -219,7 +219,11 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+To allow for updates and new features. To make code easier to maintain and debug.
+So other engineers and yourself can understand the application more easily.
+
+Poorly designed software is hard to change, integrate with other software, easier
+to break and harder to fix.
 ```
 
 ## Identify Good Design
@@ -228,7 +232,26 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code:
+
+1. Is DRY
+2. functions and methods take 4 or less parameters
+3. functions and methods have a single responsibility
+4. Functions and methods do not have multiple side effects, causing multiple data sources to mutate
+5. Modules don't interact with more than one other
+6. logic is seperate from the UI
+7. Classes are more a kept to less than 100 lines.
+8. Parts of the program are only responsible for one piece of functionality
+
+Poorly designed code:
+
+1. Isn't DRY
+2. Functions and methods take more than 4 parameters
+3. Multiple side effects occur, lots of data mutation happening at the same time
+4. It's hard to keep track of the state of data
+5. Large classes functions and methods that have multiple responsbilities and
+   and dependencies
+
 ```
 
 ## Design Heuristics
@@ -237,7 +260,15 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+They are "rules of thumb". Guidlines that should be followed, although we may
+come across exceptions.
+
+Keep code DRY.
+Keep functions, methods and classes, and collections small.
+When they became large I should abstract each piece of functionality into
+a seperate thing.
+A piece of code should have one responsibility.
+Go slow to go fast.
 ```
 
 ## Refactorings
@@ -245,5 +276,27 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Rename Method
+
+Renaming things to better describe what they do.
+
+
+Extract Method
+
+Breaking up long methods into several smaller methods.
+
+
+Pull Up Method
+
+When you have duplicate code across two seperate classes, move that code
+to a super class that both of the classes inherit from.
+
+Extract Surrounding Method
+
+For different methods which contain nearly identical code with a slight
+variation. Turn it into one method that accepts a code block to handle the
+variation.
+
+
+
 ```

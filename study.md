@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Especially if you are working in a team, it's important to have constructed your code in an organized, SOLID-abiding manner so that your teammates can easily understand your code and collaborate with you. While it may take a lot more time and effort to write with such rules in mind, it will allow you and your teammates to avoid headaches in the future when you need to refactor or extend upon the code. In the long run, writing code in such a way will actually save a lot of time and cost.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,19 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Criteria for well-designed code:
+- A class should have only one job
+- A class should be easily extendable without having to modify the class itself
+- Every subclass should be substitutable for their parent class
+- Clients should not be forced to depend on methods that they do not use.
+- A high level module (like classes, functions, and global variables) must not depend on the low level module.
+
+Indicators of poor design:
+- Having a class that handles more than one job.
+- Having a class with a method that handles a job for multiple different classes, requiring the use of multiple if/else blocks.
+- Having a 'fat' class that contains multiple methods that are specific to different clients.
+
+Resource: https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
 ```
 
 ## Design Heuristics
@@ -237,7 +249,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are recommended best practices. Even if your code functions well and the output is what you expect, it's best practice especially to keep your code DRY, have each of your modules have only one responsibility. Otherwise, when you refactor your code to make updates, you may come across multiple problems that may become very hard to solve. Specifically, you can apply Sandy Metz' rules, such as:
+- No longer than 100 lines of code per class
+- Keep methods fewer than 5 lines
+- Pass no more than 4 parameters
+- Instantiate only one object to do one thing
 ```
 
 ## Refactorings
@@ -245,5 +261,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+- Decompose Conditional: Decompose a complicated part of the conditional into separate methods.
+- Extract method: Move code into a separate method and replace old code with a call to the method.
+- Move method: If a method is used more in one class instead of its own class, create a new method in the class that uses the method the most.
 ```

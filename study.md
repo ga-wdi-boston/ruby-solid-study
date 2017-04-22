@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good software Design is important because it makes software easier to plan,
+build, test, and iterate on by providing clear patterns and efficiencies that
+are the result of good Design.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,17 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code is:
+- Flexible and easy to change
+- Robust and capable of being modified without breaking
+- Portable and reusable in general contexts
+- Easy to implement in the correct way
+
+This is the opposite of software that exhbits poor design, which is:
+- Difficult to modify
+- Prone to breaking when modified
+- Not easy to reuse
+- Difficult to implement correctly
 ```
 
 ## Design Heuristics
@@ -237,7 +249,13 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Technically, a heuristic is a process or method while a rule is a known restriction or principle. Based on those definitions in this context, a heuristic would be a process defined by the restriction of one of the rules. (see Wikipedia)
+
+According to Sandi Metz's rules:
+- Keep classes less than 100 lines.
+- Keep methods less than 5 lines.
+- Only pass 4 parameters or less to a method.
+- Only instantiate one object of a specific class for any given task.
 ```
 
 ## Refactorings
@@ -245,5 +263,12 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Some refactoring techniques that can be used to improve the design of software
+include:
+
+- Move Method – move a method to a more appropriate Class or location in source code
+- Rename Method– change the name of a method to one that better identifies its function
+- Pull Up – Move a method up to a superclass and make its context more general
+- Push Down – Move a method down to a subclass and make its context more specific
+
 ```

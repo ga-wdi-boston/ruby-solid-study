@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important for many reasons. To start, it allows one to easily make changes to existing code and it makes the proccess easier as a whole. Good design principles will also make it easier and less daunting to trouble shoot potential problems and debug. Using similar patterns such as those discussed above will also prove beneficial for managing multiple applications, as using similar patterns in your work will make reading your code easier to do and wil help to effectively creae a good product.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+One of the biggest hurdles of understanding web development is breaking things off into bite size pieces and tackling one objective at a time. This can also be applied to this concept. Using methods or functions that serve a single purpose and can easily be modified make the entire design proccess easier. Keeping your code DRY and modular is hugely important and allows for both a better end-product, but also more readable and managable code.
 ```
 
 ## Design Heuristics
@@ -237,7 +237,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+They are not rules. More like general precautions to take that are 'best practices.' That said, it is important to be aware of this, as working on a team of developers requires that similr practices be used and that others will be able to work on your code in the future. Giving methods a single purpose is a very good rule of thumb. As is limiting the lines and parameters of spicific objects.
 ```
 
 ## Refactorings
@@ -245,5 +245,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Generalize type: Create more general types to allow for more code sharing. This will make working on a team a lot easier and is a good practice.
+SRP: using methods for a single purpose allows for more managable projects.
+Naming: Too short or exessively long naming cinventions can lead to issues. Use variable names that make sense and are of reasonable length. 
 ```

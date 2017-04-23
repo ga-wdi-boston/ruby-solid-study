@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it makes code is easier to read, easier to improve, and easier to fix.  You have to be able to easily be able to add functionality or update software, so it is important that the code is clear and easy to add functions to without changing the code that works and needs to keep working.  Similarly, if one thing doesn't work, you want it to only affect other things directly related to it, and not have it destroy the entire program just because one part of it has a bug.
 ```
 
 ## Identify Good Design
@@ -228,8 +228,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
-```
+SOLID is a list of criteria for well designed code. These 5 design principles try to keep code from being difficult to change, easy to break, or have limited reusable of components. SOLID is an acronym for Single Responsibility, Open/Closed, Liskov Subtition, Interface Segreation, and Dependency Inverison Principles.   ```
 
 ## Design Heuristics
 
@@ -237,7 +236,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+A hueristic is like a rule, but somewhat less rigid than most rules.   Some rules you can use to improve the design of your code are:
+1. Keep classes less than 100 lines
+2. Keep methods less tahan 5 lines of code
+3. Never pass more than 4 parameters at one time
+4. When a call come to a rail controller, only instaciate one object, and only show the view one instance variable.
+
 ```
 
 ## Refactorings
@@ -245,5 +249,4 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
-```
+To refactor you want to use encapsulation and polymorphism.  Encapsulation means using getter and setter statement to interact with clearly interact with data, and polymorphism relates to using one methods or one block of code can apply and be useful with more than one object. Subtyping is an example of polymorphism. Subtyping is when many classes are related by a super class.   ```

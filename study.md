@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+- the ability to work on a team is why good design is important. if the code is confusing, clunky and unorganized, your teammates won't be able to work with your code, because it'll be hard to understand or it'll break easily.
+- if your code is simple and solid, it'll last a long time, even when someone adds to it.  it'll be so simple that it will take someone tampering with the source code to mess things up.  this is important if your code supports an application or a product that is used constantly.  it'll be easy to update and won't break down.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,16 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+well-designed code:
+- following the LSP mantra, code should be written to work as a cohesive unit.  if the subclasses are related to the base class, they should be able to use the previously written code to produce results.
+- well-designed code should build ontop of itself
+- well-designed code should commit to a single task, and if it has to branch off, it should move to a different module and cover the other task separately
+
+poor design:
+broad code that covers a lot of different tasks in one module, instead of being specific and deliberate
+fragile code, will break if altered
+not "DRY"
+
 ```
 
 ## Design Heuristics
@@ -237,7 +247,10 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+i think it's more of a list of guidelines, so it's similar to rules.
+
+i haven't run into writing a class of 100+ lines, but i'll try to avoid that if possible.
+my methods have krept over 5 lines, so i need to work on that
 ```
 
 ## Refactorings
@@ -245,5 +258,11 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+keep it DRY - if i have duplicate behavior in two classes, maybe get rid of one of them and add a parameter to make sure the task is still being completed
+
+make a method private if it's not being used by any other class
+
+method is badly named, rename so its purpose is clear
+
+data item looks like it should be an object, turn it into an object or hash or whatever it needs to be.
 ```

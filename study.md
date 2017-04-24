@@ -220,6 +220,8 @@ In your own words, explain why good design is important.
 
 ```md
 <!-- your answer here -->
+good designs allows for code to be less complex, easier to deciper and learn, 
+more adaptable to change, and easier to manage
 ```
 
 ## Identify Good Design
@@ -229,6 +231,8 @@ of poor design.
 
 ```md
 <!-- your answer here -->
+good code: easy to decipher and learn, easier to change, easier to find the root of the change
+bad code: difficult to understand, not easily changed, breaks easily, limited reusability
 ```
 
 ## Design Heuristics
@@ -238,6 +242,9 @@ use to improve the design of your code?
 
 ```md
 <!-- your answer here -->
+Heuristics are more similar to guidelines
+some guidelines to follow include: using 4 or less parameters, class that contains 100 or less lines of code
+methods/functions having 5 or less lines of code
 ```
 
 ## Refactorings
@@ -246,4 +253,13 @@ Describe some common, named refactorings you can use to approach a good design.
 
 ```md
 <!-- your answer here -->
+Rename method: the act of renaming a property/attribute, method or object. Renaming
+can help with clarity and less need for commenting
+Move method: move a method into a more appropriatly named class
+Pull up method: used for when there are duplicated codes across multiple classes.
+Best practice is to pull up that code to a super class and make it so that it can
+be used multiple times(without the need for extra liens of code)
+
+
+I used http://www.integralist.co.uk/posts/refactoring-techniques.html#3 as a resource
 ```

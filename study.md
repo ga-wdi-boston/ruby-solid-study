@@ -219,7 +219,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design reduces complexity in software.  Complexity makes software more difficult to debug and change and makes it more difficult work with teams.
+Adhering to established design principles helps programmers manage complexity and provides a template for building.
 ```
 
 ## Identify Good Design
@@ -228,7 +229,16 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Indicators that code is well designed:
+- Classes are, at most, 100 lines of code.
+- Methods are no longer than 5 lines of code.
+- Methods and functions take, at most, 4 parameters.
+- Rails controllers instantiate only one object.
+- Rails views are responsible for only one instance variable.
+
+Code smells:
+- Method or class names are too long. This indicates that a class or method does not adhere to the single responsibility principle.
+- Code is duplicated in different places.
 ```
 
 ## Design Heuristics
@@ -237,13 +247,20 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are not the same thing as rules.  Heuristics are more like "rules of thumb" that a programmer can use to get an idea of whether or not his or her code satisfies more abstract rules like the single responsibility principle.  Heuristics can help guide refactoring by alerting the developer to places in the code that may require refactoring.
+
+Some useful heuristics include:
+- Your class should be no longer than 100 lines of code.
+- Your methods should be no longer than 5 lines of code.
 ```
 
 ## Refactorings
 
 Describe some common, named refactorings you can use to approach a good design.
 
-```md
-<!-- your answer here -->
-```
+"The extract method:" - The extract method involves removing code from a method and placing it in a new method, then including a call to the new method in the original method. [Extract Method](https://sourcemaking.com/refactoring/extract-method)
+
+ "The inline method": - Simplify multiple method calls by identifying methods whose functionality can be replicated inside the method from which they are called and whose functionality is simple enough that it does not necessarily call for its own method definition. -https://sourcemaking.com/refactoring/inline-method
+
+ "Split temporary variable" - Identify variables that are used for mutliple intermediate states within a method and create two sepearate variables that, semantically, better explain what is going on inside the variable.
+ https://sourcemaking.com/refactoring/split-temporary-variable

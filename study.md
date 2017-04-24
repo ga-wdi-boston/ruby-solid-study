@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important in all facets of life. If you build something ugly or obtuse, it may as well be useless. If the iPhone was not the sleek and attractive device it is, the smartphone revolution may not have taken off. Even beyond aesthetics, a poorly designed system simply will not work.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code is clear, concise and effective. You want to use as little space as humanly possible while simultaneously maximizing your functionality. Bad code is code which does not do what it is supposed to. Verbosity is not attractive, but as long its functionality is clear and without bugs, I would personally say verbose code is preferable to sleek, inscrutable code. Unless, of course, you want to deny access of all others to your code, at which point in time, making it sleek and inscrutable is the way to go.
 ```
 
 ## Design Heuristics
@@ -237,7 +237,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+No, a heuristic is closer to a rule of thumb. Some heuristics reccomended include keeping objects under 100 lines of code and keeping each method under 5 lines. I am not personally at the point in my career where I can have my own personal heuristics.
 ```
 
 ## Refactorings
@@ -245,5 +245,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+encapsulated fields: make getters and setters more concentrated
+Generalizing types for broader use.
+Pulling up/Pushing down: moving code into superclasses or subclasses, respectively
 ```

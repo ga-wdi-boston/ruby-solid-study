@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design shows a thoughtful and logical approach to solving a problem.  It
+plans for the whole design - so that major aspects can be taken into
+consideration before implementation begins.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,11 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+- simple functions that do one thing.  no side effects.  focused.
+- classes or objects that represent one thing - not a big blob of stuff
+- easy to understand, readable
+- can be easily extended
+
 ```
 
 ## Design Heuristics
@@ -237,7 +243,10 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+They are not strict rules.  But they are guidelines that can help to reduce
+the complexity of an implementation.  Functions that do one thing is a good
+rule.  If you call a function "checkForWin" - it shouldn't have a side effect
+of switching the player.
 ```
 
 ## Refactorings
@@ -245,5 +254,7 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+- simplify
+- DRY
+- do one thing
 ```

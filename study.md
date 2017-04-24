@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Having good design makes things easier to read/possibly edit for other developers.
+You don't want code that's too rigid or fragile...
+You want to find the happy medium where things are malleable enough to be fixed but rigid enough to withstand changes... The simpler the sturdier. You wouldn't cut a house of of a tree and hope to live in it, you'd put together a bunch of pieces of wood/stone/brick/whatever and all the pieces combined make a better structure.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,10 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+You want your code to be DRY/concise as opposed to lengthy and repetitive...
+You also want your code to have one responsibility as opposed to doing too many things and being too vulnerable to change...
+Your code should also have everything change at the same rate rather than be too complex and disorganized...
+And finally, if your code is going to depend on something, it should depend on things that change less often than it does as opposed to something that changes too quickly and makes it easier to do wrong than do right.
 ```
 
 ## Design Heuristics
@@ -237,7 +242,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are like unofficial rules/guidelines, like rules of thumb. One good example of design heuristics is Sandi Metz's list of rules:
+1. Your class can be no longer than 100 lines of code-- be concise.
+2. Your methods can be no longer than five lines of code-- don't be extra.
+3. You can pass no more than four parameters and you can’t just make it one big hash.--don't throw all your code into one method, it'll make everything depend on each other too much and make it fragile.
+4. When a call comes into your Rails controller, you can only instantiate one object to do whatever it is that needs to be done… and your view can only know about one instance variable-- be simple, have everything do one thing at a time and that way if something breaks you only break one thing.
+Also, trust your linter for styling (source: all the consultants, mostly Ben and Mike)
 ```
 
 ## Refactorings
@@ -245,5 +255,9 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Single Responsibility Principle -- every class/module should just have one responsibility... don't give anything more than one reason to change, and don't make things too flexible/fragile.
+Open/closed Principle -- software entities should be open for extension, but not modification -- use inheritance, let objects extend their behaviors, but don't actually change them outright... just enhance them.
+Liskov Substitution Principle -- Subtypes should be able to replace their supers without changing the behavior/properties of the supers-- children types can take after their parent types, so in theory they should be able to swap in without changing the parent-type. It's like how a square is a rectangle, and it doesn't change anything about a rectangle, but a rectangle is not a square... subtypes should be like squares.
+Interface Segregation Principle -- no client should rely on methods it doesn't use-- This feels self explanatory, but yea, if a client doesn't use a method, it shouldn't depend on it... that makes things rigid/immobile.
+Dependency Inversion Principle -- I don't actually fully get this one. I get why high level modules shouldn't depend on low level modules in the same way I get the LSP... is this just another substitution principle?
 ```

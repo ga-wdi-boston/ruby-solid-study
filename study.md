@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+It seems that some of the biggest problems when it comes to software develpment are functionality and reusablity. Obviously getting your program to work is the primary concern but having functional code that is well thought out, readable and labled is what appears to be praised the most by developers. Its one thing if it works, but its another if any developer can open up your program and be able to understand how it works.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Flexiable, readable, clear, DRY. Managing change and reducing complexity
 ```
 
 ## Design Heuristics
@@ -237,7 +237,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+I would describe Heuristics as "best practices" instead of "rules." Have concise blocks that serve a single purpose is a great rule of thumb. Also we've been hearing "go slow to go fast" since we walked in the door. Rushed code performed by over tired frustrated developers is likely to break down thus extending the time it takes to finish a project or task.
 ```
 
 ## Refactorings
@@ -245,5 +245,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Generalize Type – create more general types to allow for more code sharing. Replace type-checking code with State/Strategy. Extract Class moves part of the code from an existing class into a new class. https://en.wikipedia.org/wiki/Code_refactoring#List_of_refactoring_techniques
 ```

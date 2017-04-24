@@ -120,6 +120,8 @@ is_four_sided?(Square.new(5))
 
 # Does this code adhere to LSP when the client wants a four-sided object?
 # What if the client wants a four-sided object with equal sides?
+
+yes and yes. For the former, either class will work, and for the latter, only the subclass will work. In all cases, number_of_sides == 4
 ```
 
 OCP can be thought of as the primary goal of good design. OCP says that "objects
@@ -219,7 +221,8 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design makes it easier to understand code, and easier to change its
+functionality if the requirements change.
 ```
 
 ## Identify Good Design
@@ -228,7 +231,14 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Good design: methods and objects have only one purpose and do only one thing
+bad design: methods and objects are general-purpose or accomplish more than one task
+
+good design: objects are open to extension, closed to modification
+bad design: objects are difficult to use for other purposes, or can be changed from the outside
+
+good design: short methods, short objects, easy to read
+bad design: long methods, long objects, complicated programming
 ```
 
 ## Design Heuristics
@@ -237,7 +247,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+heuristics are guidelines. They are usually not implemented perfectly initially. I need to work on SRP. During the Tic Tac Toe project I had some big methods that (for example), cleared the old board, created a new game object, and set up a new board all at once
 ```
 
 ## Refactorings
@@ -245,5 +255,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+The Single Responsibility Principle, the Open/Closed Principle, the Liskov Substitution Principle, Interface Segregation Principle, and the Dependency Inversion Principle
 ```

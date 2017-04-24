@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it makes software systems that are easier to understand and more adaptable to change.
 ```
 
 ## Identify Good Design
@@ -228,7 +228,19 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Criteria for well-designed code (SOLID):
+1) Single responsibility principle - every class should be responsible for one and only one part of the functionality. A class should have only one reason to change.
+2) Open/ closed principle - entities should be open for extension, but closed for modification.
+3) Liskov substitution principle - if S is a subtype of T, then objects of type T in a program should be replaced with objects of type S without altering any properties of T.
+4) Interface segregation principle - no client should be forced to depend on methods it does not use.
+5)  Dependency Inversion Principle - both high-level and low-level modules should depend on abstractions.
+
+
+Indicators of poor design:
+1) Rigid (difficult to change)
+2) Fragile (tendency to break when changed)
+3) Immobile (limited resuse of components)
+4) Viscous (easier to do it 'wrong' than 'right')
 ```
 
 ## Design Heuristics
@@ -237,7 +249,11 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are a little different from "rules," in that they are meant to be guiding principles to refer to instead of rigid, hard rules.
+- A class should be no longer than 100 lines of code
+- Methods can be no longer than 5 lines of code
+- You can pass no more than 4 parameters and you can't just make it one big hash
+- When a call comes in, you can only instantiate one object
 ```
 
 ## Refactorings
@@ -245,5 +261,8 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+From the source integralist.co.uk
+- Rename: most effective and simply; renaming an attribute nearly always helps promote greater clarity.
+- Extract: most used and important; breaking up long methods and shifting chunks of code into new methods which have descriptive identifiers.
+- Inline: convert method invocation into inlined piece of code (when identifier adds no extra benefit).
 ```

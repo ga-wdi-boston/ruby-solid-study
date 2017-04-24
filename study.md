@@ -219,7 +219,9 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design helps with avoiding mistakes, makes it easier to improve and extend software,
+allows other people to understand your software, allows your software to age gracefully and
+adapt to change, and can allow you to accomplish more with less.
 ```
 
 ## Identify Good Design
@@ -228,7 +230,10 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Code that is simple, has singular purpose, and is built to be extended.
+
+Poorly designed code includes code that is: complex and hard to understand, tries to solve many different things
+at once and may try to do "everything for everyone", needs to be changed to work in the future.
 ```
 
 ## Design Heuristics
@@ -237,7 +242,10 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are more of guidelines than rules. There are times when you can break them, but
+you should have a really good reason and know why what you are doing qualifies as an exception.
+
+The common design heuristics are that you should never write a function that accepts more than 4 arguments, you should write functions and methods that do one thing, you should not have classes that are more than 100 lines of code, and just generally avoiding very large and complex things in favor of smaller discreet things.
 ```
 
 ## Refactorings
@@ -245,5 +253,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Breaking out functions/methods into those that solve single things. If you have to describe what the code does using "and", "or", and other descriptors, then you should simplify it into multiple pieces. Identifying common patterns in your code that would allow for simplification, or organization, such as breaking functions/classes into multiple.
 ```

@@ -219,7 +219,17 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it can save the developer a lot of problems
+ down the line as the code becomes more complex and once a product is deployed.
+  It also makes the code easier to manage as you are writing it and alter once
+   the code is deployed or if you want to add another element during development.
+    Writing well designed code may take a little longer when the code is being
+     written but can save a developer much more time during the later stages of
+      development. Well designed code can make it easier to identify bugs in
+       your code as they appear during development. It also makes it easier
+        for other developers to understand if they were ever in the position
+         to alter the source (if code is open source of they acquire the rights
+          to a program).
 ```
 
 ## Identify Good Design
@@ -228,7 +238,20 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Some qualities of well-designed code are minimal complexity in code, commented
+ code, having classes that only perform one function, functions can be changed
+  without having to change code on multiple files, and code is reused
+   efficiently. In addition, all modules should only depend on what they need
+    to depend on and nothing more. In general, well designed code utilize all
+     of the SOLID methods effectively.
+
+Some characteristics of poorly defined code are classes that perform multiple
+ functions, unnecessary complexity, high repetition in code, multiple systems
+  that are dependent on each other (in order to change how an aspect of the
+   code works one might have to change multiple classes or functions instead
+    of only one function).
+
+
 ```
 
 ## Design Heuristics
@@ -237,7 +260,15 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are more like general guidelines or rules that one should follow
+ and are not like rules in the traditional sense where they must be followed
+  without exception. Several design heuristics that I can use to improve the
+   design of my code are not having long classes (no more than 100 lines each),
+    writing short methods (no more than 5 lines of code), passing in no more
+     than 4 parameters into a class or function. Number 4 of Sandi Metz’ rules
+      I don’t really understand because I don’t have any context due to my lack
+       of experience in Rails. After we get started I anticipate I will have a
+        better idea.
 ```
 
 ## Refactorings
@@ -245,5 +276,15 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+One common refactoring method I could use to help write well-designed code is to
+ first identify an issue with my code. Next, I can analyze my methods and
+ classes and attempt to refine the role they play in my code. To test if my
+  redefinitions were successful I can take my new code and test it in my old
+   code. If the behavior of my old code doesn’t change then I know I wrote good
+    code. These steps are then repeated during the development process as needed.
+     Some other techniques for achieving good design are to have clearly written
+      code that minimizes unnecessary complexity and having well commented code
+       so that not only can you understand it later if you haven’t looked at it
+        for a while, but other developers can quickly understand your mindset
+         if they need to look at it for any reason.
 ```

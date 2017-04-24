@@ -219,7 +219,12 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+Good design is important because it allows changes to be implemented without
+breaking everything. A well designed system can have parts removed or exchanged
+and still work. Also, if a system is well designed people will be able to
+understand it more easily than if it's design was convoluted.
+
+ resources: content above
 ```
 
 ## Identify Good Design
@@ -228,7 +233,23 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+Well designed code:
+- each part has only one job
+- one part doesn't care how the another part creates the product that it uses,
+just that the product is there
+- easy to navigate
+
+
+Poorly deisgned code:
+- complex interdependency between parts
+- large concept parts being reliant on unrelated smaller parts
+- different parts doing the same job
+- hard to navigate
+- hard to understand
+- hard to learn
+
+resources used: content above and
+https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29
 ```
 
 ## Design Heuristics
@@ -237,7 +258,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics are well established guidelines, which can have exceptions if there
+is good reasoning behind them.
+
+- Limit the length of your classes, methods and the number of parameters passed.
+
+resources used: content above
 ```
 
 ## Refactorings
@@ -245,5 +271,12 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+- Don't have two pieces of code that do the same thing.
+- Don't overcomplicate a solution.
+- Determine if a block of code has more than one purpose and create a new block if
+the answer is 'yes'.
+- Try to keep the relationships between different parts of your code to a minimum
+and keep them simiple.
+
+resources used: content above
 ```

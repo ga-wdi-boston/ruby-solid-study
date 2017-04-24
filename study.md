@@ -219,7 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+<!-- Good software design is important because often times software is expensive and if the software that was designed does not meet the needs of the users, can not be upgraded, complicated to modify, or is poorly designed, the software itself will be a waste of time for users learning to use it (as well as extra down time required for resolving issues/bugs), and money (the software itself, and the resources and training required for those resources to use it). -->
 ```
 
 ## Identify Good Design
@@ -228,7 +228,18 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+<!--
+Indicators of well-designed code:
+  easier to learn & less complex
+  clearly defined methods and classes
+  compatability
+
+Indicators of poorly designed code:
+  Difficult to change
+  breaks/crshes when changed
+  incompatable with version and system upgrades
+
+ -->
 ```
 
 ## Design Heuristics
@@ -237,7 +248,9 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+<!-- Heuristics are like key rules.
+Some rules, Sandi Metz' rules, that can be used to iprove code design include keeping the lines of code in a class below 100 lines, lmiting the number of parameters passed through a method to 4 maximum, keeping lines of code within a method to 5 or less, and being sure to only represent one objevt in the controller.
+ -->
 ```
 
 ## Refactorings
@@ -245,5 +258,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+<!-- Along with keeping your code as DRY as possible, I think two other very important approaches when working on design include keeping track of whether or not everything changes at the same rate, and keeping track of whether parts of code depend on things that change less often than it does. -->
 ```

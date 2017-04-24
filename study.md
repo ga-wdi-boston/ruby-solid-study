@@ -228,7 +228,8 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+It should be easy to change, hard to break, and make re-use of components.  In general
+it should make it easy to be correct and hard to be wrong.
 ```
 
 ## Design Heuristics
@@ -237,7 +238,10 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+No, they are rules of thumb as opposed to hard and fast rules.  Examples:
+Limit classes to 100 lines of code.
+Limit methods to 5 lines of code.
+Pass no more than 4 parameters.
 ```
 
 ## Refactorings
@@ -245,5 +249,8 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+- OCP (Open/Closed Principal): Objects should be open to extension, but closed to modification.
+- SRP (Single Responsibility Principle): Every module or class should have responsibility
+over a single part of the functionality provided by the software,
+and that responsibility should be entirely encapsulated by the class
 ```

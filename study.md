@@ -228,7 +228,7 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+You want your code to smell good, it needs to follow Sandi Metz' Rules and should be DRY. This is so other developers can look at your code and understand exactly what is going on so they can update or change things in it.
 ```
 
 ## Design Heuristics
@@ -237,7 +237,7 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+Heuristics is a rule of thumb in development if you follow the Sandi Metz' Rules you will be writing good code and have no issues, this will improve the design of your code to.
 ```
 
 ## Refactorings
@@ -245,5 +245,5 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Keeping your code modular, using inline temp and rename methods are a couple of many ways to refactor your design to make it a good design.
 ```

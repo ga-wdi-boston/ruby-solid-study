@@ -219,7 +219,13 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
+I think other than simplifying and organizing the entire process for everyone on a project team, there are many reasons that good design is important:
+-If your design is more organized it is easier to read by people who aren't familiar with it, thus increasing the efficiency between coworkers who are all reviewing code together.
+-If it is designed in a way that is modular and follows Sandi Metz's rules, for instance, then pieces of code will be smaller and responsible for less, thus when they break they will have less of an impact of the total functionality of the app you're building. They will also be easier to locate/debug.
+-Good design can also make your app easier to build on in the future. It can make your app "future proof" in a way, avoiding the problem that often occurs where a new feature is intended to be added, and upon realizing that the current build won't allow it, you realize you have to rebuild parts of the app that are already working.
+
+Used:
+Wiki articles on SOLID (single responsiblity principle, open/closed principle, etc), Sandi Metz's rules
 ```
 
 ## Identify Good Design
@@ -228,7 +234,12 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
+-In general, less complexity is best.
+-Future proof (apps that aren't may need to be rebuilt in the future when u want to add features)
+-Classes/methods have single responsibility (if classes are huge and have way too much going on, this makes them unwieldly. Major indicator of bad design)
+-Interface segregation-- It is a sign of bad design when your user is exposed to too much information and too many methods that aren't of use to them in the context that they're operating in on your app. Simplifying and making interfaces modular helps to guide the user and improve their experience, and also makes it easier for the developers to change interfaces/redeploy them in the future.
+
+Used: SOLID wiki pages
 ```
 
 ## Design Heuristics
@@ -237,7 +248,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
+I think heuristics seem more like guidelines for making the best possible app in an efficient amount of time, but aren't guaranteed to be optimal (just optimal enough). Rules are moreso things you literally aren't supposed to do unless you want to make a broken app.
+
+SOLID covers a lot of these. For interface design, I really liked Jakob Neilson's list of design heuristics.
+I feel like this question is a bit redundant?
+
+Used: same as above
 ```
 
 ## Refactorings
@@ -245,5 +261,21 @@ use to improve the design of your code?
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Techniques that allow for more abstraction:
+-Encapsulate Field – force code to access the field with getter and setter methods
+-Generalize Type – create more general types to allow for more code sharing
+-Replace type-checking code with State/Strategy
+-Replace conditional with polymorphism
+Techniques for breaking code apart into more logical pieces:
+-Componentization breaks code down into reusable semantic units that present clear, well-defined, simple-to-use interfaces.
+-Extract Class moves part of the code from an existing class into a new class.
+-Extract Method, to turn part of a larger method into a new method. By breaking down code in smaller pieces, it is more easily understandable. This is also applicable to functions.
+Techniques for improving names and location of code
+-Move Method or Move Field – move to a more appropriate Class or source file
+-Rename Method or Rename Field – changing the name into a new one that better reveals its purpose
+-Pull up – in object-oriented programming (OOP), move to a superclass
+-Push down – in OOP, move to a subclass
+
+Used:
+Wiki
 ```

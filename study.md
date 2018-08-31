@@ -219,8 +219,7 @@ material. Instead, digest what you've read and repeat it in your own voice.
 In your own words, explain why good design is important.
 
 ```md
-<!-- your answer here -->
-```
+Good software design is important for speed and duration. Fast software is software that includes mininmal code that still delivers. Duration of software can be dependent on the how well the underlying code is written. Its important to have a strong foundation so that people can continue building on top of what already exists.```
 
 ## Identify Good Design
 
@@ -228,8 +227,13 @@ List some criteria for well-designed code. Contrast this list with indicators
 of poor design.
 
 ```md
-<!-- your answer here -->
-```
+Single responsibility
+Open/closed
+Liskov substitution
+Interface segregation
+Dependency inversion
+
+Anything that does not align with the above design priciples can be deemed poor quality.```
 
 ## Design Heuristics
 
@@ -237,13 +241,12 @@ Are heuristics the same thing as rules? What are some design heuristics you can
 use to improve the design of your code?
 
 ```md
-<!-- your answer here -->
-```
+Heuristics are different than rules because they do not establish set instructions that must be followed otherwise a conflict will exist. Heuristics are great for learning as you build and enable programmers to be agile. With rules coders are restricted since they must follow instructions precisely or else the code will not execute. ```
 
 ## Refactorings
 
 Describe some common, named refactorings you can use to approach a good design.
 
 ```md
-<!-- your answer here -->
+Encapsulate field – force code to access the field with getter and setter methods
 ```

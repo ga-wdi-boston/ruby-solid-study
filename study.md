@@ -85,7 +85,7 @@ implicit protocol. In statically-typed languages, ISP allows us to more easily
 compose objects together to get the behavior we want. All we have to do to
 achieve ISP is focus on SRP (and DIP).
 
-LSP is another principle we don't have to think much about. LSP says that
+LSP is another principle we git@github.com:IareDave/ruby-solid-study.gitdon't have to think much about. LSP says that
 "subclasses should be substitutable for their base classes". For example, things
 we call "Sedans" should behave like "Vehicles", though the former may be more
 specific. This is similar to the mantra we've repeated in the past about
@@ -220,6 +220,8 @@ In your own words, explain why good design is important.
 
 ```md
 <!-- your answer here -->
+Good design is important to allow for changes in the application later on that won't resolve in unforseen consequences
+or don't require a huge time investment for minor changes.
 ```
 
 ## Identify Good Design
@@ -229,6 +231,11 @@ of poor design.
 
 ```md
 <!-- your answer here -->
+Methods with only a few lines of codes max, limiting parameters to objects to around 4, going no more than 100 lines
+of code in your classes, and creating parts of the program that can function on their own without requiring too much from
+other objects. On the contrast, poor design may include methods with many lines of code, objects with massive numbers of parameters,
+classes that seem to take up an entire file with hundreds of lines of codes, and creating too many parts of the program
+that are dependent on other functionalitys of the program
 ```
 
 ## Design Heuristics
@@ -238,6 +245,14 @@ use to improve the design of your code?
 
 ```md
 <!-- your answer here -->
+Heuristics are similar to "rules of thumb," to be used as guiding principles
+while you code. Some design heuristics to consider when refactoring are Sandi
+Metz' Rules:
+ * Your class can be no longer than 100 lines of code
+ * Your methods can be no longer than 5 lines of code
+ * You can pass no more than 4 paramters and you can't just make it one big hash
+ * When a call comes in, you can only instantiate one object to do whatever it is
+   that needs to be done
 ```
 
 ## Refactorings
@@ -246,4 +261,13 @@ Describe some common, named refactorings you can use to approach a good design.
 
 ```md
 <!-- your answer here -->
+Some refactoring methods:
+ * Rename
+   * Renaming identifiers can reduce the need for code comments and nearly
+     always helps to promote greater clarity.
+ * Extract
+   * Break up long methods by shifting overly complex chunks of code into new
+     methods which have very descriptive identifiers.
+ * Replace Loop With Collection Closure Method
+   * aka replace the loop with an Enumerable method
 ```

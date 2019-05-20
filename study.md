@@ -255,7 +255,7 @@ Metz' Rules:
    that needs to be done
 ```
 
-## Refactorings
+## Refactoringszs
 
 Describe some common, named refactorings you can use to approach a good design.
 
